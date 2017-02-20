@@ -5,6 +5,8 @@ language: english
 excerpt: A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
 ---
 
+## A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
+
 If, years later, you look back on our story  
 the story that you so painstakingly wrote with me  
 never ever let regret taint the pages, my darling  
