@@ -177,7 +177,10 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+        align-items: center;
   background: $background-color;
 
   a {
@@ -190,34 +193,35 @@
       color: $masthead-link-color-hover;
       text-decoration: none;
     }
+
+    &.site-title {
+      margin-left: 0;
+    }
   }
 
   button {
-    position: absolute;
-    height: 100%;
-    right: 0;
     padding: 0 0.5rem;
+    align-self: stretch;
     border: 0;
     outline: none;
-    background-color: $primary-color;
     color: #fff;
+    background-color: $primary-color;
     cursor: pointer;
   }
 
   .visible-links {
-    display: table;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+     justify-content: flex-end;
+    -webkit-box-flex: 1;
+                flex: 1;
+    padding-right: 2rem;
+    overflow: hidden;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
-
-      &:first-child {
-        // font-weight: bold;
-
-        a {
-          margin-left: 0;
-        }
-      }
+      -webkit-box-flex: 0;
+            flex: none;
 
       &:last-child {
         a {
@@ -247,7 +251,7 @@
       &:hover:before {
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+          transform: scaleX(1); /* reveal*/
       }
     }
   }
@@ -262,6 +266,10 @@
     border-radius: $border-radius;
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
+
+    &.hidden {
+      display: none;
+    }
 
     a {
       margin: 0;
@@ -350,11 +358,14 @@
         height: 0.125em;
         line-height: 1;
         background-color: $gray;
+        -webkit-transition: 0.2s ease-out;
         transition: 0.2s ease-out;
       }
 
       &:after {
-        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
       }
 
       &:hover {
@@ -382,11 +393,15 @@
 
     // on hover show expand
     label:hover:after {
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
     }
 
     input:checked + label:hover:after {
-      transform: rotate(0);
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+        transform: rotate(0);
     }
 
     ul {
@@ -440,8 +455,8 @@
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transform: translate(0, 10%);
-        -ms-transform: translate(0, 10%);
-            transform: translate(0, 10%);
+            -ms-transform: translate(0, 10%);
+        transform: translate(0, 10%);
   }
 }
 
@@ -454,8 +469,8 @@
     opacity: 1;
     margin-top: 1em;
     -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
   }
 }
 
