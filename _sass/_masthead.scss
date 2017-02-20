@@ -10,12 +10,14 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+  background-color: transparent;
 
   &__inner-wrap {
     @include container;
     @include clearfix;
     display: -webkit-box;
     display: flex;
+    background-color: transparent;
     -webkit-box-pack: justify;
      justify-content: space-between;
     padding: 0em 1em 0em;
