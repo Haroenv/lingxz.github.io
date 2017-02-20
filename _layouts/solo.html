@@ -1,41 +1,11 @@
 ---
+layout: default
+author_profile: false
 ---
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-	<meta charset="utf-8">
-
-	{% include seo.html %}
-
-	<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-
-	<!-- http://t.co/dKP3o1e -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<script>
-	  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-	</script>
-
-	<!-- For all browsers -->
-	<link rel="stylesheet" href="{{ '/assets/css/solo.css' | absolute_url }}">
-	<meta http-equiv="cleartype" content="on">
-    {% include head/custom.html %}
-  </head>
-  <body>
-
-    {% include browser-upgrade.html %}
-
-    <article class="solo">
-		<div class="container">
-			<h1><a href="./">{{ page.title }}</a></h1>
-			{{ content }}
-		</div>
-	</article>
-
-    {% include scripts.html %}
-
-  </body>
-
+<article class="solo">
+	<div class="container">
+		<h1><a href="./">{{ page.title }}</a></h1>
+		{{ content }}
+	</div>
+</article>

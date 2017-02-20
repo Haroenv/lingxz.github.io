@@ -263,7 +263,7 @@ defaults:
       path: ""
       type: poetry
     values:
-      layout: single
+      layout: solo
       author_profile: false
       share: true
       related: true

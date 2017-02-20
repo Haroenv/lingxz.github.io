@@ -1,21 +1,33 @@
+---
+---
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italc,400,400italic,500,700);
 
 /*font: 18px/1.6 'Open Sans', sans-serif;*/
-html {
+// html {
+//   font: 18px/1.6 'Open Sans', "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+// }
+
+
+// body {
+//   margin: 2rem 0 5rem;
+//   color: #222;
+// }
+
+// @media (min-width: 30rem) {
+//   body {
+//     margin-top: 5rem;
+//   }
+// }
+
+.solo {
   font: 18px/1.6 'Open Sans', "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
-}
-
-
-body {
   margin: 2rem 0 5rem;
   color: #222;
-}
 
-@media (min-width: 30rem) {
-  body {
+  @media (min-width: 30rem) {
     margin-top: 5rem;
   }
-}
+
 
 a {
   color: #0074d9; /* From http://clrs.cc */

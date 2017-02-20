@@ -115,8 +115,8 @@
 
     &:last-child {
       a {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
+        // border-top-right-radius: $border-radius;
+        // border-bottom-right-radius: $border-radius;
       }
     }
   }
@@ -132,12 +132,14 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $link-color;
+    // color: $link-color;
+    color: $text-color;
     border: 1px solid $light-gray;
     border-radius: $border-radius;
 
     &:hover {
       color: $link-color-hover;
+      color: $text-color;
     }
 
     &:first-child {
@@ -183,10 +185,10 @@
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: $masthead-link-color;
-    text-decoration: none;
 
     &:hover {
       color: $masthead-link-color-hover;
+      text-decoration: none;
     }
   }
 
@@ -401,7 +403,7 @@
       }
 
       &:hover {
-        // text-decoration: underline;
+        text-decoration: underline;
       }
     }
   }
