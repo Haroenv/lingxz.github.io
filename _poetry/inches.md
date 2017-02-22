@@ -1,11 +1,9 @@
 ---
-layout: solo
 title: Inches
 language: english
+description: A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
 excerpt: A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
 ---
-
-## A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
 
 If, years later, you look back on our story  
 the story that you so painstakingly wrote with me  

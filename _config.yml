@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/fox5.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
   location         :
   email            :
@@ -183,6 +183,9 @@ collections:
   poetry:
     output: true
     permalink: /:collection/:title/
+  essays:
+    output: true
+    permalink: /:collection/:title/
 
 # Plugins
 gems:
@@ -267,3 +270,16 @@ defaults:
       author_profile: false
       share: true
       related: true
+      excerpt: ""
+      language: chinese
+  # _essays
+  - scope:
+      path: ""
+      type: essays
+    values:
+      layout: solo
+      author_profile: false
+      share: true
+      related: true
+      excerpt: ""
+      language: chinese

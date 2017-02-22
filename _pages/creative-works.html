@@ -1,0 +1,23 @@
+---
+layout: archive
+permalink: /creativeworks/
+author_profile: true
+---
+
+{% capture written_label %}'None'{% endcapture %}
+
+{% for collection in site.collections reversed %}
+  {% unless collection.output == false or collection.label == "posts" %}
+    {% capture label %}{{ collection.label }}{% endcapture %}
+    {% if label != written_label %}
+      <h2 id="{{ label | slugify }}" class="">{{ label | downcase }}<span><small><a href=" {{ label | prepend: '/' | absolute_url }}">   more...</a></small></span></h2>
+
+      {% capture written_label %}{{ label }}{% endcapture %}
+    {% endif %}
+  {% endunless %}
+  {% for post in collection.docs reversed limit: 4%}
+    {% unless collection.output == false or collection.label == "posts" %}
+      {% include archive-single-writing.html %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
