@@ -275,9 +275,6 @@ defaults:
       related: true
       excerpt: ""
       language: chinese
-      tags: 
-        - tech
-        - love
   # _essays
   - scope:
       path: ""
@@ -289,3 +286,4 @@ defaults:
       related: true
       excerpt: ""
       language: chinese
+      description_language: chinese

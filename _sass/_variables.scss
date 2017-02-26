@@ -16,7 +16,6 @@ $indent-var                 : 1.3em !default;
 $serif                      : Georgia, Times, serif !default;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
-
 /* sans serif typefaces */
 // $sans-serif-narrow          : $sans-serif !default;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif !default;
@@ -58,7 +57,7 @@ $garamond                   : Garamond, serif !default;
 $custom: Open Sans, "Helvetica Neue", Arial, 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 $heading: Open Sans, "Helvetica Neue", Arial, "ManYu", 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
-$solo-subheading: Open Sans, "Helvetica Neue", Arial, "ManYu", 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$chinese-font-family: "ManYu", 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
 $global-font-family         : $custom !default;
 // $header-font-family         : $sans-serif !default;
