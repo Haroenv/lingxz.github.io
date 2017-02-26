@@ -117,37 +117,37 @@
 
   /* social buttons */
 
-  $social:
-  (facebook, $facebook-color),
-  (twitter, $twitter-color),
-  (google-plus, $google-plus-color),
-  (linkedin, $linkedin-color);
+  // $social:
+  // (facebook, $facebook-color),
+  // (twitter, $twitter-color),
+  // (google-plus, $google-plus-color),
+  // (linkedin, $linkedin-color);
 
-  @each $socialnetwork, $color in $social {
-    &--#{$socialnetwork} {
-      background-color: $color;
+  // @each $socialnetwork, $color in $social {
+  //   &--#{$socialnetwork} {
+  //     background-color: $color;
 
-      &:hover {
-        background-color: mix(#000, $color, 20%);
-      }
-    }
-  }
+  //     &:hover {
+  //       background-color: mix(#000, $color, 20%);
+  //     }
+  //   }
+  // }
 
-  /* extra large button */
+  // /* extra large button */
 
-  &--x-large {
-    font-size: $type-size-4;
-  }
+  // &--x-large {
+  //   font-size: $type-size-4;
+  // }
 
-  /* large button */
+  // /* large button */
 
-  &--large {
-    font-size: $type-size-5;
-  }
+  // &--large {
+  //   font-size: $type-size-5;
+  // }
 
-  /* small button */
+  // /* small button */
 
-  &--small {
-    font-size: $type-size-7;
-  }
+  // &--small {
+  //   font-size: $type-size-7;
+  // }
 }
