@@ -3,6 +3,7 @@ title: Inches
 language: english
 description: A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
 excerpt: A Jekyll template for publishing single-page websites and articles that are incredibly readable and fully responsive
+description_language: english
 ---
 
 If, years later, you look back on our story  

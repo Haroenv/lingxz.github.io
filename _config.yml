@@ -10,7 +10,10 @@ locale                   : "en"
 title                    : "The Confused Fox"
 title_separator          : "-"
 name                     : "Lingyi"
-description              : "时间不负，何负时间"
+# description              : "时间不负，何负时间"
+description              : "和光同尘，与时舒卷"
+# 才子词人，自是白衣卿相
+# 心似双丝网，中有千千结
 # description              : "时光会老去，往事会微凉"
 # description              : "时光会老去，往事会微凉。静坐在窗前，掬一碗水，煮一壶茶，依旧是当年的那个味道，只不过冥冥中增了几许淡然。"
 # description              : "一抹明媚，一瓣馨香。一片盎然，一望回眸。在清丽透彻的阳光下，便是一番风景。一盏香茗，一卷书墨，一落窗明，一艾心情。在思绪幽然的专注中，便是一回自得。"
@@ -283,3 +286,4 @@ defaults:
       related: true
       excerpt: ""
       language: chinese
+      description_language: chinese
