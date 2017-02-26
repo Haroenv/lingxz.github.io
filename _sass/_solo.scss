@@ -68,7 +68,7 @@
     margin-bottom: 5rem;
     color: #555;
     text-align: right;
-    margin-right: -4rem;
+    margin-right: -2rem;
     border-bottom: none;
 
     &.chinese {
@@ -77,7 +77,8 @@
     }
   }
 
-  @media (min-width: 30rem) {
+  // @media (min-width: 30rem) {
+  @include breakpoint($large) {
     .solo__description {
       margin-top: 2.5rem;
       font-size: 1.75rem;
@@ -218,7 +219,10 @@
   .solo__container {
     max-width: 625px;
     margin: 0 auto;
-    padding: 0 0.75rem;
+    padding: 0;
+    @include breakpoint($small) {
+      padding: 0 0.75rem;
+    }
   }
 
   .sharing {
