@@ -67,7 +67,7 @@ $susy: (
 @import "footer";
 @import "syntax";
 @import "forms";
-
+@import "rrssb";
 
 /*
    Layout specific
@@ -77,4 +77,4 @@ $susy: (
 @import "archive";
 @import "sidebar";
 @import "print";
-@import "solo"
+@import "solo";
