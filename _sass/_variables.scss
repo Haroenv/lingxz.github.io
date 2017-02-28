@@ -53,15 +53,16 @@ $garamond                   : Garamond, serif !default;
        url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.woff) format('woff'),
        url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.otf) format('opentype');
 }
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 
-$custom: Open Sans, "Helvetica Neue", Arial, 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
-$heading: Open Sans, "Helvetica Neue", Arial, "ManYu", 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$custom: Bitter, "Helvetica Neue", Arial, 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$heading: Bitter, "Helvetica Neue", Arial, 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
 $chinese-font-family: "ManYu", 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
 $global-font-family         : $custom !default;
 // $header-font-family         : $sans-serif !default;
-$header-font-family         : $custom !default;
+$header-font-family         : $heading !default;
 $caption-font-family        : $serif !default;
 
 /* type scale */
@@ -81,7 +82,7 @@ $type-size-8                : 0.625em !default;  // ~10px
 
 $red                        : #FF3636;
 $theme-color                : $red;
-$text-color                 : #000;
+// $text-color                 : #000;
 $gray                       : #7a8288 !default;
 $dark-gray                  : mix(#000, $gray, 40%) !default;
 $darker-gray                : mix(#000, $gray, 60%) !default;
@@ -92,7 +93,8 @@ $body-color                 : #fff !default;
 $background-color           : #fff !default;
 $code-background-color      : #fafafa !default;
 $code-background-color-dark : $light-gray !default;
-$text-color                 : $dark-gray !default;
+// $text-color                 : $dark-gray !default;
+$text-color                 : #404040 !default;
 $border-color               : $lighter-gray !default;
 
 $primary-color              : #7a8288 !default;

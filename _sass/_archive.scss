@@ -16,7 +16,9 @@
 
   a {
     // color: inherit;
-    color: $theme-color;
+    // color: $theme-color;
+    color: $text-color;
+    font-size: $type-size-4;
     text-decoration: none;
   }
 }
@@ -35,7 +37,6 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  // font-family: $global-font-family;
 
   a + a {
     opacity: 0.5;
@@ -53,7 +54,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
 
   & + p {
     text-indent: 0;
