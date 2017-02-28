@@ -8,6 +8,7 @@ author_profile: true
 
 {% for collection in site.collections reversed %}
   {% unless collection.output == false or collection.label == "posts" %}
+    <section class="collection__container">
     {% capture label %}{{ collection.label }}{% endcapture %}
     {% if label != written_label %}
       <h1 id="{{ label | slugify }}" class="collection__title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ label | downcase }}</a></h1>
@@ -15,10 +16,12 @@ author_profile: true
 
       {% capture written_label %}{{ label }}{% endcapture %}
     {% endif %}
+
+    {% for post in collection.docs reversed limit: 4%}
+      {% unless collection.output == false or collection.label == "posts" %}
+        {% include archive-single-writing.html %}
+      {% endunless %}
+    {% endfor %}
+    </section>
   {% endunless %}
-  {% for post in collection.docs reversed limit: 4%}
-    {% unless collection.output == false or collection.label == "posts" %}
-      {% include archive-single-writing.html %}
-    {% endunless %}
-  {% endfor %}
 {% endfor %}
