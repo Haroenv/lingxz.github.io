@@ -49,6 +49,26 @@ $susy: (
 );
 @import "vendor/susy/susy";
 
+// hamburger menu
+@import "vendor/hamburgers/hamburgers";
+
+$hamburger-layer-height: 3px;
+$hamburger-layer-spacing: 3px;
+$hamburger-layer-width: 32px;
+.hamburger-inner {
+  &,
+  &::before,
+  &::after {
+    width: $hamburger-layer-width;
+    height: $hamburger-layer-height;
+    background-color: $masthead-link-color;
+  }
+};
+
+.hamburger-box {
+  width: $hamburger-layer-width;
+  height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+}
 
 /*
    Base
