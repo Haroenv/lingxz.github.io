@@ -261,12 +261,13 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 15px;
+    margin-top: 5px;
     padding: 5px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    opacity: 100%;
+    // box-shadow: 0 0 10px rgba(#000, 0.25);
 
     &.hidden {
       display: none;
@@ -275,6 +276,7 @@
     a {
       margin: 0;
       padding: 10px 20px;
+      padding: 0 8px 2px 8px;
       font-size: $type-size-5;
 
       &:hover {
@@ -283,31 +285,31 @@
       }
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: -11px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: $border-color transparent;
-      display: block;
-      z-index: 0;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -11px;
+    //   right: 10px;
+    //   width: 0;
+    //   border-style: solid;
+    //   border-width: 0 10px 10px;
+    //   border-color: $border-color transparent;
+    //   display: block;
+    //   z-index: 0;
+    // }
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      right: 10px;
-      width: 0;
-      border-style: solid;
-      border-width: 0 10px 10px;
-      border-color: #fff transparent;
-      display: block;
-      z-index: 1;
-    }
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   top: -10px;
+    //   right: 10px;
+    //   width: 0;
+    //   border-style: solid;
+    //   border-width: 0 10px 10px;
+    //   border-color: #fff transparent;
+    //   display: block;
+    //   z-index: 1;
+    // }
 
     li {
       display: block;
