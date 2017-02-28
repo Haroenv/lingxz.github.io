@@ -10,7 +10,7 @@ author_profile: true
   {% unless collection.output == false or collection.label == "posts" %}
     {% capture label %}{{ collection.label }}{% endcapture %}
     {% if label != written_label %}
-      <h1 id="{{ label | slugify }}" class="page__title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ label | downcase }}</a></h1>
+      <h1 id="{{ label | slugify }}" class="collection__title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ label | downcase }}</a></h1>
       <p class="page__meta"> <a href=" {{ label | prepend: '/' | absolute_url }}">read more...</a></p>
 
       {% capture written_label %}{{ label }}{% endcapture %}

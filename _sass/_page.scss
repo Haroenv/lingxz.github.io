@@ -58,6 +58,17 @@
   }
 }
 
+.collection__title {
+  margin-top: 0;
+  line-height: 1;
+  border-bottom: 2px dashed #ddd;
+  padding-bottom: 0.2em;
+
+  & + .page__meta {
+    margin-top: -0.5em;
+  }
+}
+
 .page__lead {
   // font-family: $global-font-family;
   font-size: $type-size-4;

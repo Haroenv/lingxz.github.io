@@ -53,10 +53,18 @@ $garamond                   : Garamond, serif !default;
        url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.woff) format('woff'),
        url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Light.otf) format('opentype');
 }
+@font-face {
+   font-family: 'Noto Sans SC';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanssc/v1/NotoSansSC-Regular.otf) format('opentype');
+ }
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
 $custom: Bitter, "Helvetica Neue", Arial, 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
-$heading: Bitter, "Helvetica Neue", Arial, 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$heading: Bitter, "Helvetica Neue", Arial, 'Noto Sans SC', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
 $chinese-font-family: "ManYu", 'Noto Sans SC Light', "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
