@@ -1,0 +1,35 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+author_profile: true
+---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+
+    {% capture written_label %}'None'{% endcapture %}
+
+    {% for collection in site.collections reversed %}
+      {% unless collection.output == false or collection.label == "posts" %}
+        <section class="collection__container">
+        {% capture label %}{{ collection.label }}{% endcapture %}
+        {% if label != written_label %}
+          <h1 id="{{ label | slugify }}" class="collection__title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ site.data.collection-names[label].en | default: label | downcase }} {% if site.data.collection-names[label].ch %} | {{ site.data.collection-names[label].ch }}{% endif %}</a></h1>
+          <p class="page__meta"> <a href=" {{ label | prepend: '/' | absolute_url }}">read more...</a></p>
+
+          {% capture written_label %}{{ label }}{% endcapture %}
+        {% endif %}
+
+        {% for post in collection.docs reversed limit: 4%}
+          {% unless collection.output == false or collection.label == "posts" %}
+            {% include archive-single-writing.html %}
+          {% endunless %}
+        {% endfor %}
+        </section>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>

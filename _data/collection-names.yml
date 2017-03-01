@@ -1,0 +1,11 @@
+poetry:
+  en: "poetry"
+  ch: "诗歌"
+
+essays:
+  en: "essays"
+  ch: "随笔"
+
+shortstories:
+  en: "short stories"
+  ch: "短篇小说"
