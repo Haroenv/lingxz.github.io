@@ -56,7 +56,7 @@ $(document).ready(function(){
 
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
-    $btn.toggleClass('is-active')
+    $btn.toggleClass('is-active');
     clearTimeout(timer);
   });
 
@@ -64,6 +64,7 @@ $(document).ready(function(){
     // Mouse has left, start the timer
     timer = setTimeout(function() {
       $hlinks.addClass('hidden');
+      $btn.toggleClass('is-active');
     }, closingTime);
   }).on('mouseenter', function() {
     // Mouse is back, cancel the timer
