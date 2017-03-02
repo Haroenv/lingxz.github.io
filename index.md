@@ -5,11 +5,12 @@ comments: false
 ---
 
 <h1 id="Hello" style="font-size: 4em">Hello.</h1>
-
+ 
 <p id="intro-line">I am 
 <a id="name" href="http://theconfused.me">Lingyi Hu</a>.</p>
 
-Pleased to meet you. 
+Nice to meet you. 
+
 
 **What you can find here:**
 
