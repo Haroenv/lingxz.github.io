@@ -6,7 +6,10 @@ comments: false
 
 <h1 id="Hello" style="font-size: 4em">Hello.</h1>
 
-This is the blog of [Lingyi](http://theconfused.me). 
+<p id="intro-line">I am 
+<a id="name" href="http://theconfused.me">Lingyi Hu</a>.</p>
+
+Pleased to meet you. 
 
 **What you can find here:**
 
