@@ -27,11 +27,7 @@
     {% if include.avatar %}
       <img src="{{ include.avatar }}" alt="{{ include.name | escape }}">
     {% elsif include.email %}
-      <script type="text/javascript">
-        var hash = "{{ include.email }}";
-        var data = new Identicon(hash).toString();
-        document.write('<img src="data:image/png;base64,' + data + '">');
-      </script>
+      <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=monsterid&s=60" srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=monsterid&s=120 2x" alt="{{ include.name | escape }}">
     {% else %}
       <img src="{{ site.url }}/assets/images/avatar-60.png" srcset="{{ site.url }}/assets/images/avatar-120.png 2x" alt="{{ include.name | escape }}">
     {% endif %}
