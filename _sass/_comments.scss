@@ -34,7 +34,7 @@
 }
 
 .comment__timestamp {
-  font-family: $sans-serif;
+  font-family: $global-font-family;
   font-size: 0.8em;
 
   a {
@@ -102,12 +102,12 @@
   }
 }
 
-.comment__reply {
+// .comment__reply {
 
-  .btn {
-    font-size: 0.64em;
-  }
-}
+//   .btn {
+//     font-size: 0.64em;
+//   }
+// }
 
 #cancel-comment-reply-link {
   margin-left: 1em;
