@@ -96,8 +96,8 @@
             {% assign comments = site.data.comments[page.slug] | where_exp: 'item', 'item._parent == nil' %}
             {% for comment in comments %}
               {% assign index   = forloop.index %}
-              {% assign p       = comment._parent %}
-              {% assign parent  = p | to_integer %}
+              {% assign r       = comment.replying_to %}
+              {% assign parent  = r | to_integer %}
               {% assign avatar  = comment.avatar %}
               {% assign email   = comment.email %}
               {% assign name    = comment.name %}
@@ -123,7 +123,7 @@
             </fieldset>
             <fieldset class="hidden" style="display: none;">
               <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
-              <input type="hidden" id="comment-parent" name="options[parent]" value="">
+              <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
               <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
               <label for="comment-form-location">Leave blank if you are a human</label>
               <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off">

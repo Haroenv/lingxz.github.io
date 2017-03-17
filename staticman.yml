@@ -1,5 +1,5 @@
 comments:
-  allowedFields     : ['name', 'email', 'url', 'message']
+  allowedFields     : ['name', 'email', 'url', 'message', 'replying_to']
   branch            : "master"
   commitMessage     : "New comment."
   filename          : "comment-{@timestamp}"
@@ -7,6 +7,7 @@ comments:
   moderation        : true
   path              : "_data/comments/{options.slug}"
   requiredFields    : ['name', 'email', 'message']
+  allowedOrigins    : ["theconfused.me"]
   transforms:
     email           : md5
   generatedFields:
