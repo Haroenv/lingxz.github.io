@@ -97,14 +97,14 @@
             {% for comment in comments %}
               {% assign index   = forloop.index %}
               {% assign r       = comment.replying_to %}
-              {% assign parent  = r | to_integer %}
+              {% assign replying_to  = r | to_integer %}
               {% assign avatar  = comment.avatar %}
               {% assign email   = comment.email %}
               {% assign name    = comment.name %}
               {% assign url     = comment.url %}
               {% assign date    = comment.date %}
               {% assign message = comment.message %}
-              {% include comment.html index=index avatar=avatar parent=parent email=email name=name url=url date=date message=message %}
+              {% include comment.html index=index avatar=avatar replying_to=replying_to email=email name=name url=url date=date message=message %}
             {% endfor %}
           </div>
           <!-- End static comments -->
@@ -123,6 +123,7 @@
             </fieldset>
             <fieldset class="hidden" style="display: none;">
               <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+              <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
               <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
               <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
               <label for="comment-form-location">Leave blank if you are a human</label>
