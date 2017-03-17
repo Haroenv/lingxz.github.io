@@ -6,7 +6,7 @@
       $('#comment-form').submit(function () {
         var form = this;
 
-        $(form).addClass('disabled');
+        $(form).addClass('btn--disabled');
         $('#comment-form-submit').html('<svg class="icon spin"><use xlink:href="#icon-loading"></use></svg> Loading...');
 
         $.ajax({
@@ -24,7 +24,7 @@
             $('#comment-form-submit').html('Submit Comment');
             $('#comment-form .js-notice').removeClass('notice--success').addClass('notice--danger');
             showAlert('<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.');
-            $(form).removeClass('disabled');
+            $(form).removeClass('btn--disabled');
           }
         });
 

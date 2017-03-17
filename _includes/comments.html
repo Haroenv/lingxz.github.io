@@ -84,7 +84,7 @@
     <section id="static-comments">
       {% if site.repository and site.staticman.branch %}
         {% if site.data.comments[page.slug] %}
-          <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4>
+          <!-- <h4 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}</h4> -->
           <!-- Start static comments -->
           <div id="comments" class="js-comments">
             <h2 class="page__section-label">
@@ -129,9 +129,8 @@
               <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off">
             </fieldset>
             <fieldset>
-              <label for="comment-form-message"><strong>Comment</strong> <small>(<a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> is allowed)</small></label>
               <p class="markdown hidden">markdown supported.</p> 
-              <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" spellcheck="true"></textarea>
+              <textarea type="text" rows="6" id="comment-form-message" name="fields[message]" spellcheck="true" placeholder="Write your comment here."></textarea>
             </fieldset>
             <!-- Start comment form alert messaging -->
             <p class="hidden js-notice">
