@@ -8,6 +8,7 @@ comments:
   path              : "_data/comments/{options.slug}"
   requiredFields    : ['name', 'email', 'message']
   allowedOrigins    : ["theconfused.me"]
+  name              : "theconfused.me"
   transforms:
     email           : md5
   generatedFields:
