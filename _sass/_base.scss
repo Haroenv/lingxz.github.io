@@ -350,10 +350,14 @@ nav {
    Global animation transition
    ========================================================================== */
 
+
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, textarea, input[type="submit"], .btn, .highlight, .archive__item-teaser {
-  font-family: $global-font-family;
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+
+textarea {
+  font-family: $global-font-family;
 }
 
 a:hover {
