@@ -17,7 +17,7 @@ Bug reports and feedback are welcome!
 
 ---
 
-I recently got inspired to write interactive fiction, after playing [one](https://herringblue.github.io/content/train/index.html) shared by someone on Facebook. 
+I recently got inspired to write interactive fiction, after playing [The Train](https://herringblue.github.io/content/train/index.html) by [Ivan Chuang](https://herringblue.github.io/), shared by someone on Facebook. 
 
 It's an intriguing game, but I wasn't satisfied, and the natural response was to make my own. 
 
