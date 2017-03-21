@@ -8,17 +8,19 @@ tags:
 
 ## TLDR
 
-I recently wrote some text adventure game called **Drifter**.
+I recently wrote some text adventure game called [Drifter](http://theconfused.me/drifter).
 
-You can find the game [here](theconfused.me/drifter).
+> You wake up in someone else's body. What will you do? Can you figure out your purpose?
 
-You wake up in someone else's body. What will you do? Can you figure out your purpose? 
-
-Bug reports and queries are welcome. 
+Bug reports and queries are welcome! 
 
 ---
 
 I recently got inspired to write interactive fiction, after playing [one](https://herringblue.github.io/content/train/index.html) shared by someone on Facebook. 
+
+It's an intriguing game, but I wasn't satisfied, and the natural response was to make my own. 
+
+The one I read used `ink` (the language, not the real one), and it looks easy enough, so I just decided to stick with it. 
 
 ## <span class="icon-laptop"></span> Using ink
 Inkle's scripting language [`ink`](https://github.com/inkle/ink) was easy enough to learn. The [tutorial](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md) covered most of the use cases. The [inky IDE](https://github.com/inkle/inky) even supports converting to a web version--a folder with its `html`, `css`, `js` files all ready to be uploaded to a server. 
@@ -32,7 +34,7 @@ The documentation mentions shuffling briefly, but since `ink` now supports `LIST
 From what I know, there are 2 ways to go about doing this. Say you want to get a random item from [apple, orange, pear].
 - Without using a list:
 
-```
+```javascript
 === function shuffle_fruits ===
 {shuffle:
     - ~ return "apple"
@@ -43,7 +45,7 @@ From what I know, there are 2 ways to go about doing this. Say you want to get a
 
 - Choose a random number between 1 and the length of the list, then use that number to access the list element. 
 
-```
+```python
 LIST fruits = apple, orange, pear
 VAR fruit = false
 === function get_random_index ===
@@ -72,7 +74,7 @@ But all in all, a very gentle learning curve.
 If you want to play the game without any prior knowledge of the plot, don't read below. This section is pretty general in terms of the elements of interactive fiction, but still might reveal some aspects of the plot.
 </div>
 
-Interactive fiction is actually quite different from most of the other forms of writing I've been doing. To be honest, I've never written anything of the sort, and before this, I have been woefully ignorant of the tools available. I don't play much of it either, because sometimes pointless dilemmas make me stressed. I didn't even know about the term interactive fiction at first, oops.
+Interactive fiction is actually quite different from most of the other forms of writing I've been doing. To be honest, I've never written anything of the sort, and before this, I have been woefully ignorant of the tools available. I don't play much of it either. I didn't even know about the term interactive fiction at first, oops.
 
 But I have read those choose your own adventure books. So I gathered some of my ideas from there, and went around the web looking for resources. [Emily Short's blog](https://emshort.blog/), especially [this post](https://emshort.blog/how-to-play/writing-if/) was quite helpful. 
 
