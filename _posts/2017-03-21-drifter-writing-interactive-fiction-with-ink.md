@@ -5,14 +5,15 @@ tags:
     - ink
     - tech
 ---
-
 ## TLDR
 
 I recently wrote a text adventure game called [Drifter](http://theconfused.me/drifter).
 
+<a href="http://theconfused.me/drifter"><img class="align-center" src="{{ site.url }}{{ site.baseurl }}/assets/images/drifter.png" alt="Drifter" width="300" rel="http://theconfused.me/drifter"/></a>
+
 > You wake up in someone else's body. What will you do? Can you figure out your purpose?
 
-Bug reports and queries are welcome! 
+Bug reports and feedback are welcome! 
 
 ---
 
