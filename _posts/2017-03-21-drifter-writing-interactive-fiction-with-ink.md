@@ -8,9 +8,11 @@ tags:
 
 ## TLDR
 
-I recently wrote some text adventure game called Drifter, come and play it!
+I recently wrote some text adventure game called **Drifter**.
+
 You can find the game [here](theconfused.me/drifter).
-You wake up in someone else's body. Can you figure out your purpose? 
+
+You wake up in someone else's body. What will you do? Can you figure out your purpose? 
 
 Bug reports and queries are welcome. 
 

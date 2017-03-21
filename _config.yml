@@ -258,7 +258,7 @@ defaults:
       path: ""
       type: poetry
     values:
-      layout: solo
+      layout: single
       author_profile: false
       share: true
       related: true
@@ -269,7 +269,7 @@ defaults:
       path: ""
       type: essays
     values:
-      layout: solo
+      layout: single
       author_profile: false
       share: true
       related: true
