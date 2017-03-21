@@ -102,15 +102,14 @@ abbr[data-original-title] {
 blockquote {
   background: $blockquote-background-color;
   border-radius: 1em;
-  font-style: italic;
   padding: 1em 3em;
-  padding-bottom: 0.5em;
   margin: 1em;
   position: relative;
 }
 
 blockquote:before {
   font-family: Georgia, serif;
+  font-style: italic;
   display: block;
   content: "\201C";
   font-size: 7em;
@@ -130,6 +129,10 @@ blockquote cite {
  
 blockquote cite:before {
   content: "\2014 \2009";
+}
+
+blockquote p:last-child {
+  margin: 0;
 }
 
 // blockquote {

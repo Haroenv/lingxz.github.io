@@ -8,7 +8,7 @@ tags:
 
 ## TLDR
 
-I recently wrote some text adventure game called [Drifter](http://theconfused.me/drifter).
+I recently wrote a text adventure game called [Drifter](http://theconfused.me/drifter).
 
 > You wake up in someone else's body. What will you do? Can you figure out your purpose?
 
