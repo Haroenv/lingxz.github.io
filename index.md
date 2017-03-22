@@ -7,13 +7,13 @@ comments: false
 <script>
     document.addEventListener("DOMContentLoaded", function(){
         Typed.new(".typed", {
-            strings: ["Hello. I am <a href='http://theconfused.me'>Lingyi</a>.<br>I live on the Orion arm of the Milky Way Galaxy, Local Group, Virgo Supercluster.^1000<br>Nice to meet you."],
+            strings: ["Hello. I am <a href='http://theconfused.me'>Lingyi</a>.<br><br>I live on the Orion arm of the Milky Way Galaxy, Local Group, Virgo Supercluster.^1000<br><br>Nice to meet you."],
             typeSpeed: 20
         });
     });
 </script>
 
-<p class="text-center" style="min-height:10em;"><span class="typed"></span></p>
+<p class="text-center" style="min-height:14em;"><span class="typed"></span></p>
 
 **What you can find here:**
 
