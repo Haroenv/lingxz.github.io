@@ -6,7 +6,7 @@ poetry:
 essays:
   en: "Essays"
   ch: "随笔"
-  description: random thoughts about life and everything under the sun
+  description: too artsy for the blog, too long for the facebook status.
 
 shortstories:
   en: "Short Stories"
