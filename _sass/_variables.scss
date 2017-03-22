@@ -115,7 +115,7 @@ $link-color-hover           : mix(#fff, $link-color, 40%) !default;
 $link-color-visited         : mix(#000, $link-color, 25%) !default;
 $archive-link-color         : $text-color;
 $archive-link-color-hover   : $theme-color !default;
-$masthead-link-color        : $primary-color !default;
+$masthead-link-color        : $text-color !default;
 // $masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;
 $masthead-link-color-hover  : $theme-color !default;
 

@@ -4,6 +4,7 @@ tags:
     - writing
     - ink
     - tech
+    - interactive fiction
 ---
 ## TLDR
 

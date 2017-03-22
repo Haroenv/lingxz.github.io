@@ -1,17 +1,6 @@
-#name {
-	color: $text-color;
-	font-size: 2em;
-	background: url(../images/doodle.png);
-	background-size: 130% 100%;
-}
-
-#intro-line {
-	margin-bottom: 0;
-}
-
-#Hello {
-	font-family: $fancy-font;
-	font-size: 4em;
+.typed, .typed-cursor {
+	font-family: $monospace;
+	font-size: 1.3em;
 }
 
 // use of keyframes mixin

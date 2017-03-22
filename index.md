@@ -4,13 +4,16 @@ author_profile: false
 comments: false
 ---
 
-<h1 id="Hello">Hello.</h1>
- 
-<p id="intro-line">I am 
-<a id="name" href="http://theconfused.me">Lingyi Hu</a>.</p>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        Typed.new(".typed", {
+            strings: ["Hello. I am <a href='http://theconfused.me'>Lingyi</a>.<br>I live on the Orion arm of the Milky Way Galaxy, Local Group, Virgo Supercluster.^1000<br>Nice to meet you."],
+            typeSpeed: 20
+        });
+    });
+</script>
 
-Nice to meet you. 
-
+<p class="text-center" style="min-height:10em;"><span class="typed"></span></p>
 
 **What you can find here:**
 

@@ -38,21 +38,26 @@
 }
 
 .site-title {
+  font-family: $monospace;
   display: -webkit-box;
   display: flex;
   padding: 0.5rem 0;
   align-self: stretch;
   -webkit-box-align: center;
         align-items: center;
-  font-weight: bold;
   z-index: 20;
+  &:hover > img {
+    opacity: 0.7;
+  }
 }
 
 .masthead__menu {
    width: 100%;
 
   .site-nav {
-    margin-left: 0;
+    // margin-left: 0;
+    margin-left: 10px;
+    margin-top: 5px;
 
     @include breakpoint($small) {
       float: right;
