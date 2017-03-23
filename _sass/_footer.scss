@@ -24,8 +24,9 @@
   footer {
     @include container;
     @include clearfix;
-    margin-top: 2em;
-    padding: 0 1em 2em;
+    margin-top: 0.5em;
+    padding: 0 1em 0.5em;
+    text-align: center;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -34,7 +35,7 @@
 
   a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover {
       text-decoration: underline;
