@@ -33,7 +33,7 @@
   float: none;
   margin: 0 auto;
   padding: 0;
-  max-width: 625px;
+  max-width: $max-width;
   @include breakpoint($small) {
     padding: 0 0.75rem;
   }

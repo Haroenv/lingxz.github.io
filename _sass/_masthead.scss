@@ -22,10 +22,11 @@
      justify-content: space-between;
     padding: 0em 1em 0em;
     font-family: $header-font-family;
+    max-width: $max-width;
 
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
+    // @include breakpoint($x-large) {
+    //   max-width: $x-large;
+    // }
 
     nav {
       z-index: 10;
@@ -38,7 +39,7 @@
 }
 
 .site-title {
-  font-family: $monospace;
+  // font-family: $monospace;
   display: -webkit-box;
   display: flex;
   padding: 0.5rem 0;
@@ -46,9 +47,9 @@
   -webkit-box-align: center;
         align-items: center;
   z-index: 20;
-  &:hover > img {
-    opacity: 0.7;
-  }
+  transition: none;
+  font-size: $type-size-2;
+  color: $link-color;
 }
 
 .masthead__menu {
