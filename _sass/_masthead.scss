@@ -51,7 +51,7 @@
   font-size: $type-size-4;
   color: $link-color;
   
-  @include breakpoint($small) {
+  @include breakpoint($x-small) {
     font-size: $type-size-3;
   }
 }
