@@ -48,8 +48,12 @@
         align-items: center;
   z-index: 20;
   transition: none;
-  font-size: $type-size-2;
+  font-size: $type-size-4;
   color: $link-color;
+  
+  @include breakpoint($small) {
+    font-size: $type-size-3;
+  }
 }
 
 .masthead__menu {
