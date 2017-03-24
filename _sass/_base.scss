@@ -159,7 +159,8 @@ a {
   &:active {
     outline: 0;
   }
-  &:hover { color: $link-color-hover; }
+  // &:hover { color: $link-color-hover; }
+  &:hover { text-decoration: underline; }
   &:hover > image { opacity: 0.7; }
 }
 
@@ -360,6 +361,6 @@ textarea {
   font-family: $global-font-family;
 }
 
-a:hover {
-  text-decoration: none !important;
-}
+// a:hover {
+//   text-decoration: none !important;
+// }
