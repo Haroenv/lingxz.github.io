@@ -20,9 +20,10 @@
     background-color: transparent;
     -webkit-box-pack: justify;
      justify-content: space-between;
-    padding: 0em 1em 0em;
+    // padding: 0em 1em 0em;
     font-family: $header-font-family;
     max-width: $max-width;
+    border-bottom: solid #3498db;
 
     // @include breakpoint($x-large) {
     //   max-width: $x-large;

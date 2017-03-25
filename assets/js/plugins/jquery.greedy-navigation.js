@@ -55,7 +55,15 @@ $(document).ready(function(){
   });
 
   $btn.on('click', function() {
-    $hlinks.toggleClass('hidden');
+    if ($hlinks.hasClass('hidden')) {
+      $hlinks.slideToggle(300, function(){
+      });
+      $hlinks.toggleClass('hidden');
+    } else {
+      $hlinks.slideToggle(300, function(){
+        $hlinks.toggleClass('hidden');
+      });
+    }
     $btn.toggleClass('is-active');
     clearTimeout(timer);
   });

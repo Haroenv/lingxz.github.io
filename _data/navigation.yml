@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "home"
-    url: /
   - title: "blog"
     url: /posts
   - title: "writing"

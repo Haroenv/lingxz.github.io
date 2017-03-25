@@ -179,6 +179,7 @@
   position: relative;
   display: -webkit-box;
   display: flex;
+  padding: 0em 1em 0em;
   -webkit-box-align: center;
         align-items: center;
   // background: $background-color;
@@ -217,7 +218,7 @@
      justify-content: flex-end;
     -webkit-box-flex: 1;
                 flex: 1;
-    padding-right: 2rem;
+    // padding-right: 2rem;
     overflow: hidden;
 
     li {
@@ -261,11 +262,13 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 5px;
-    padding: 5px;
-    border: 1px solid $border-color;
+    // border: 1px solid $border-color;
     border-radius: $border-radius;
-    background: #fff;
+    // background: #fff;
+    background: #3b3b3b;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     // box-shadow: 0 0 10px rgba(#000, 0.25);
 
     &.hidden {
@@ -274,9 +277,13 @@
 
     a {
       margin: 0;
-      padding: 10px 20px;
-      padding: 0 8px 2px 8px;
+      // padding: 10px 20px;
+      // padding: 0 8px 2px 8px;
       font-size: $type-size-5;
+      color: #f9f9f9;
+      padding: 15px 0px;
+      padding-right: 7%;
+      text-align: right;
 
       &:hover {
         color: $masthead-link-color-hover;
@@ -312,7 +319,7 @@
 
     li {
       display: block;
-      border-bottom: 1px solid $border-color;
+      // border-bottom: 1px solid $border-color;
 
       &:last-child {
         border-bottom: none;

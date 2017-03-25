@@ -14,7 +14,7 @@
             {% else %}
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title | upcase }} </a></li>
           {% endfor %}
         </ul>
         <button class="hamburger--elastic" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
