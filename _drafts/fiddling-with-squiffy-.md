@@ -1,5 +1,5 @@
 ---
-title: Fiddling with Squiffy 
+title: Fiddling with Squiffy
 tags:
 - writing
 - interactive fiction

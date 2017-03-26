@@ -182,7 +182,6 @@
   padding: 0em 1em 0em;
   -webkit-box-align: center;
         align-items: center;
-  // background: $background-color;
 
   a {
     display: block;
@@ -209,6 +208,9 @@
     background-color: transparent;
     // background-color: $primary-color;
     cursor: pointer;
+    &.hidden {
+      display: none;
+    }
   }
 
   .visible-links {
@@ -220,6 +222,10 @@
                 flex: 1;
     // padding-right: 2rem;
     overflow: hidden;
+    
+    &.hidden {
+      display: none;
+    }
 
     li {
       -webkit-box-flex: 0;
@@ -281,9 +287,8 @@
       // padding: 0 8px 2px 8px;
       font-size: $type-size-5;
       color: #f9f9f9;
-      padding: 15px 0px;
-      padding-right: 7%;
-      text-align: right;
+      padding: 15px;
+      text-align: center;
 
       &:hover {
         color: $masthead-link-color-hover;

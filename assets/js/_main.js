@@ -42,6 +42,7 @@ $(document).ready(function(){
     $('.markdown').removeClass('hidden');
     $('.markdown').addClass('fade');
   });
+
   
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
