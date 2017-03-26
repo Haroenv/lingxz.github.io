@@ -23,7 +23,7 @@
     // padding: 0em 1em 0em;
     font-family: $header-font-family;
     max-width: $max-width;
-    border-bottom: solid #3498db;
+    border-bottom: solid $secondary-color;
 
     // @include breakpoint($x-large) {
     //   max-width: $x-large;
