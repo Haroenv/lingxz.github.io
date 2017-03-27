@@ -5,6 +5,6 @@ permalink: /essays/
 subtitle: 时光会老去，往事会微凉
 ---
 
-{% for post in site.essays %}
+{% for post in site.essays reversed %}
   {% include archive-single.html %}
 {% endfor %}
