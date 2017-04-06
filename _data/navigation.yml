@@ -11,8 +11,6 @@ main:
         url: /poetry
       - title: "essays"
         url: /essays
-  - title: "search"
-    url: /search
   
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
