@@ -3,7 +3,7 @@ main:
   - title: "home"
     url: /
   - title: "blog"
-    url: /posts
+    url: /blog
   - title: "writing"
     url: /writing
     children: 
