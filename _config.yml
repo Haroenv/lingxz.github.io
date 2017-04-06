@@ -11,7 +11,7 @@ title                    : "The Confused Fox"
 title_separator          : "-"
 name                     : "Lingyi"
 # description              : "时间不负，何负时间"
-description              : "和光同尘，与时舒卷"
+description              : "where words collide. perplexity is the beginning of knowledge."
 # 才子词人，自是白衣卿相
 # 心似双丝网，中有千千结
 # description              : "时光会老去，往事会微凉"
@@ -241,17 +241,17 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: false
+      author_profile: true
   # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _poetry
   - scope:
@@ -259,8 +259,8 @@ defaults:
       type: poetry
     values:
       layout: single
-      author_profile: false
-      share: true
+      author_profile: true
+      share: false
       related: true
       excerpt: ""
       language: chinese
@@ -270,8 +270,8 @@ defaults:
       type: essays
     values:
       layout: single
-      author_profile: false
-      share: true
+      author_profile: true
+      share: false
       related: true
       excerpt: ""
       language: chinese

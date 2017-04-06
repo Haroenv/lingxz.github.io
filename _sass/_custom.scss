@@ -3,6 +3,14 @@
 	font-size: 1.3em;
 }
 
+.introduction {
+  font-size: $type-size-3;
+  #name {
+    font-family: $fancy-font;
+    font-size: $type-size-3;
+  }
+}
+
 // use of keyframes mixin
 @include keyframes(fade) {
   0% {

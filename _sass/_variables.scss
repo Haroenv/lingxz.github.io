@@ -34,12 +34,14 @@ $garamond                   : Garamond, serif !default;
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Nobile');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Unkempt');
+@import url('https://fonts.googleapis.com/css?family=Podkova:700,800');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 $custom: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$heading: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$heading: Gochi Hand, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 $solo-heading: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$fancy-font: Pacifico, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
+// $fancy-font: Podkova, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
+$fancy-font: Gochi Hand;
 
 $global-font-family         : $custom !default;
 $header-font-family         : $heading !default;

@@ -1,9 +1,18 @@
 # main links
 main:
+  - title: "home"
+    url: /
   - title: "blog"
     url: /posts
   - title: "writing"
     url: /writing
+    children: 
+      - title: "poetry"
+        url: /poetry
+      - title: "essays"
+        url: /essays
+  - title: "search"
+    url: /search
   
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

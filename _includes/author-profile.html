@@ -26,16 +26,43 @@
   </div> -->
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">the confused fox</h3>
+    <h3 class="author__name" itemprop="name">theconfused.me</h3>
     {% if site.description %}
       <p class="author__bio" itemprop="description">
         {{ site.description }}
       </p>
     {% endif %}
+    <nav>
+      <ul id="navigation" class="links slimmenu">
+        {% for link in site.data.navigation.main %}
+          {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+          {% else %}
+            {% assign domain = site.url | append: site.baseurl %}
+          {% endif %}
+          <li class="menu-item">
+            <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            {% if link.children %}
+              <ul>
+                {% for child in link.children %}
+                  {% if child.url contains 'http' %}
+                    {% assign domain = '' %}
+                  {% else %}
+                    {% assign domain = site.url | append: site.baseurl %}
+                  {% endif %}
+                  <li><a href="{{domain }}{{child.url}}">{{ child.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
   </div>
 
+
   <div class="author__urls-wrapper">
-<!--     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button> -->
+    <!-- <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button> -->
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">

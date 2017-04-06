@@ -75,4 +75,16 @@ $(document).ready(function(){
     closeOnContentClick: true,
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
+
+  $('#navigation').slimmenu(
+  {
+      resizeWidth: '800',
+      collapserTitle: 'Main Menu',
+      animSpeed: 'medium',
+      easingEffect: null,
+      indentChildren: true,
+      expandIcon: '+',
+      collapseIcon: '-'
+      // childrenIndenter: '&nbsp;'
+  });
 });

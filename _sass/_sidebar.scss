@@ -11,22 +11,24 @@
           transform: translate3d(0, 0 , 0);
 
   @include clearfix();
-  margin-bottom: 1em;
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: $max-width;
 
-  @include breakpoint($large) {
-    @include span(2 of 12);
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
+  // @include breakpoint($large) {
+  //   @include span(2 of 12);
+  //   opacity: 0.75;
+  //   -webkit-transition: opacity 0.2s ease-in-out;
+  //           transition: opacity 0.2s ease-in-out;
 
-    &:hover {
-      opacity: 1;
-    }
-  }
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
 
-  @include breakpoint($x-large) {
-    padding-right: 0;
-  }
+  // @include breakpoint($x-large) {
+  //   padding-right: 0;
+  // }
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
@@ -67,17 +69,21 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  height: 36px;
-
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
+  width: 7em;
+  height: 7em;
+  
+  @include breakpoint(max-width $x-small) {
+    width: 6em;
+    height: 6em;
   }
+  // @include breakpoint($large) {
+  //   display: block;
+  //   width: auto;
+  //   height: auto;
+  // }
 
   img {
-    max-width: 110px;
+    // max-width: 110px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -94,34 +100,34 @@
   padding-right: 25px;
   line-height: 1;
 
-  @include breakpoint($large) {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+  // @include breakpoint($large) {
+  //   display: block;
+  //   width: 100%;
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
 }
 
 .author__name {
   margin: 0;
 
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  // @include breakpoint($large) {
+  //   margin-top: 10px;
+  //   margin-bottom: 10px;
+  // }
 }
 .sidebar .author__name {
-  // font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-family: $fancy-font;
+  font-size: $type-size-3;
 }
 
 .author__bio {
   margin: 0;
 
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+  // @include breakpoint($large) {
+  //   margin-top: 10px;
+  //   margin-bottom: 20px;
+  // }
 }
 
 .author__urls-wrapper {
@@ -227,5 +233,26 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.menu-item {
+  display: inline-block;
+  a {
+    color: $text-color;
+    margin: 0 1rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+nav {
+  // margin-top: 1em;
+
+  .links {
+    padding: 0;
+    font-size: $type-size-3;
   }
 }
