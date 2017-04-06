@@ -49,9 +49,6 @@ $susy: (
 );
 @import "vendor/susy/susy";
 
-// hamburger menu
-@import "vendor/hamburgers/hamburgers";
-
 // mixins
 @import "vendor/compass/compass";
 @import "vendor/compass/lemonade";
@@ -59,24 +56,6 @@ $susy: (
 
 // checkbox styling
 @import "vendor/pretty-checkbox/pretty";
-
-$hamburger-layer-height: 3px;
-$hamburger-layer-spacing: 3px;
-$hamburger-layer-width: 32px;
-.hamburger-inner {
-  &,
-  &::before,
-  &::after {
-    width: $hamburger-layer-width;
-    height: $hamburger-layer-height;
-    background-color: $masthead-link-color;
-  }
-};
-
-.hamburger-box {
-  width: $hamburger-layer-width;
-  height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
-}
 
 /*
    Base
@@ -90,7 +69,7 @@ $hamburger-layer-width: 32px;
 @import "tables";
 @import "buttons";
 @import "notices";
-@import "masthead";
+// @import "masthead";
 @import "navigation";
 @import "footer";
 @import "syntax";
