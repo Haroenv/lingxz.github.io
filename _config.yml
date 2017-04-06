@@ -166,9 +166,9 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 collections:
@@ -247,7 +247,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post
       author_profile: true
       read_time: true
       comments: true
@@ -258,7 +258,7 @@ defaults:
       path: ""
       type: poetry
     values:
-      layout: single
+      layout: post
       author_profile: true
       share: false
       related: true
@@ -269,7 +269,7 @@ defaults:
       path: ""
       type: essays
     values:
-      layout: single
+      layout: post
       author_profile: true
       share: false
       related: true
