@@ -1,14 +1,16 @@
 {% if page.previous or page.next %}
-  <nav class="pagination">
+  <div class="pagination">
     {% if page.previous %}
-      <a href="{{ page.previous.url | absolute_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="{{ page.previous.url | absolute_url }}" class="pagination--pager previous" style="text-align: left; padding-left: 1em" title="{{ page.previous.title | markdownify | strip_html }}">
+        <div class="arrow"><span class="icon-back-2"></span></div> <div class="text">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}<br>{{ page.previous.title }}</div>
+      </a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+      <a href="#" style="text-align: left; padding-left: 1em" class="pagination--pager disabled previous"><div class="arrow"><span class="icon-back-2"></span><div class="text">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</div></a>
     {% endif %}
     {% if page.next %}
-      <a href="{{ page.next.url | absolute_url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="{{ page.next.url | absolute_url }}" class="pagination--pager next" style="text-align: right; padding-right: 1em" title="{{ page.next.title | markdownify | strip_html }}"><div class="arrow"><span class="icon-next-2"></span></div><div class="text">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }} <br>{{ page.next.title }}</div></a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="#" style="text-align: right; padding-right: 1em" class="pagination--pager disabled next"><div class="arrow"><span class="icon-next-2"></span></div><div class="text">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</div></a>
     {% endif %}
-  </nav>
+  </div>
 {% endif %}

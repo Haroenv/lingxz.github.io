@@ -127,19 +127,18 @@
     padding: 1em 2em;
     float: left;
     width: 50%;
-    // font-family: $sans-serif;
     font-size: $type-size-5;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     // color: $link-color;
     color: $text-color;
-    border: 1px solid $light-gray;
-    border-radius: $border-radius;
+    // border: 1px solid $light-gray;
+    // border-radius: $border-radius;
 
     &:hover {
-      color: $link-color-hover;
-      color: $text-color;
+      color: $link-color;
+      // color: $text-color;
     }
 
     &:first-child {
@@ -158,6 +157,24 @@
       pointer-events: none;
       cursor: not-allowed;
     }
+    
+    &.previous {
+      .arrow {
+        @include span(2 of 12)
+      }
+      .text {
+        @include span(10 of 12 last)
+      }
+    }
+
+    &.next{
+      .arrow {
+        @include span(2 of 12 last)
+      }
+      .text {
+        @include span(10 of 12)
+      }
+    }
   }
 }
 
@@ -166,8 +183,10 @@
 .page__share + .pagination,
 .page__comments + .pagination {
   margin-top: 2em;
-  padding-top: 2em;
+  // padding-top: 2em;
+  padding-top: 0;
   border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 
