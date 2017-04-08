@@ -40,6 +40,21 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+# algolia search
+algolia:
+  application_id         : 'VN9ANUNJHO'
+  index_name             : 'blog'
+  record_css_selector    : 'p,ul'
+  read_only_api_key      : '98fde2f0c592e7705c24e8ef80f9b655'
+  excluded_files:
+    - 404.html
+    - poetry.html
+    - blog.html
+    - writing.html
+    - essays.html
+    - search.html
+    - index.md
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -186,6 +201,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - algoliasearch-jekyll
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -242,6 +258,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      comments: false
   # _posts
   - scope:
       path: ""

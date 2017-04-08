@@ -69,7 +69,6 @@ $susy: (
 @import "tables";
 @import "buttons";
 @import "notices";
-// @import "masthead";
 @import "navigation";
 @import "footer";
 @import "syntax";
@@ -77,6 +76,7 @@ $susy: (
 @import "rrssb";
 @import "comments";
 @import "slimmenu";
+@import "algolia";
 
 /*
    Layout specific

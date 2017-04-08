@@ -12,3 +12,6 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
+
+_algolia_api_key
+

@@ -85,6 +85,5 @@ $(document).ready(function(){
       indentChildren: true,
       expandIcon: '+',
       collapseIcon: '-'
-      // childrenIndenter: '&nbsp;'
   });
 });

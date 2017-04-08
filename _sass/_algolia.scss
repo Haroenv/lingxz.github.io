@@ -1,0 +1,26 @@
+.algolia__search-content {
+  margin-top: 1em;
+}
+
+/* Search results */
+.algolia__result {
+  margin-bottom: 1rem;
+}
+.algolia__result-link {
+  font-size: 1.25rem;
+  font-weight:bold;
+}
+.algolia__result-date {
+  font-size:0.8rem;
+}
+.algolia__result-text {
+  font-size: 0.9rem;
+}
+.algolia__result-link .algolia__result-highlight {
+  background-color:#D3E8F6;
+  background-color: rgba(38,139,210,0.2);
+}
+.algolia__result-text .algolia__result-highlight {
+  background-color:#D3E8F6;
+  background-color: rgba(38,139,210,0.2);
+}
