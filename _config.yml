@@ -46,6 +46,7 @@ algolia:
   index_name             : 'blog'
   record_css_selector    : 'p,ul'
   read_only_api_key      : '98fde2f0c592e7705c24e8ef80f9b655'
+  lazy_update            : true
   excluded_files:
     - 404.html
     - poetry.html

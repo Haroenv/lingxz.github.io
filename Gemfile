@@ -3,5 +3,6 @@ gemspec
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :jekyll_plugins do 
-	gem 'algoliasearch-jekyll', '~> 0.8.0'
+	# get from latest version
+	gem 'algoliasearch-jekyll', git: 'git@github.com:algolia/algoliasearch-jekyll.git', branch: 'v1'
 end
