@@ -4,10 +4,10 @@ author_profile: true
 comments: false
 ---
 <div class="introduction" markdown="1">
-Hi. I'm <span id="name">Lingyi Hu</span>, a poor physics student.
+Hi. My name is <span id="name">Lingyi Hu</span>, a physics undergraduate student at Imperial College London. 
 {: .text-center}
 
-I live with a bunch of housemates in London, UK. I study at Imperial College. 
+I write, I code, and I investigate the secrets of the universe <span class="icon-uniF120"></span>
 {: .text-center}
 
 Say hello at <mailto:me@hulingyi.com>.
