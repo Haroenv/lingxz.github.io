@@ -7,7 +7,7 @@ comments: false
 Hi. My name is <span id="name">Lingyi Hu</span>, a physics undergraduate student at Imperial College London. 
 {: .text-center}
 
-I write, I code, and I investigate the secrets of the universe <span class="icon-uniF120"></span>
+When I'm not investigating <span class="icon-telescope"></span> the secrets of the universe (read: doing problem sheets), I'm usually [writing](/writing) or [coding](https://github.com/{{ site.repository }}). Or sleeping. 
 {: .text-center}
 
 Say hello at <mailto:me@hulingyi.com>.
