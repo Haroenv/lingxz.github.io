@@ -12,6 +12,7 @@ title_separator          : "-"
 name                     : "Lingyi"
 # description              : "时间不负，何负时间"
 description              : "where words collide. perplexity is the beginning of knowledge."
+favicon                  : "/assets/images/hippopotamus.png"
 # 才子词人，自是白衣卿相
 # 心似双丝网，中有千千结
 # description              : "时光会老去，往事会微凉"
@@ -89,7 +90,7 @@ analytics:
 # Site Author
 author:
   name             : "Your Name"
-  avatar           : "assets/images/fox5.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/hippopotamus.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an amazing person."
   location         :
   email            :
