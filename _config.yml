@@ -18,8 +18,9 @@ favicon                  : "/assets/images/hippopotamus.png"
 # description              : "时光会老去，往事会微凉"
 # description              : "时光会老去，往事会微凉。静坐在窗前，掬一碗水，煮一壶茶，依旧是当年的那个味道，只不过冥冥中增了几许淡然。"
 # description              : "一抹明媚，一瓣馨香。一片盎然，一望回眸。在清丽透彻的阳光下，便是一番风景。一盏香茗，一卷书墨，一落窗明，一艾心情。在思绪幽然的专注中，便是一回自得。"
-url                      : "http://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
+enforce_ssl              : theconfused.me
 repository               : "lingxz/lingxz.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : # true, false (default)
