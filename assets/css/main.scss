@@ -50,8 +50,8 @@ $susy: (
 @import "vendor/susy/susy";
 
 // mixins
-@import "vendor/compass/compass";
-@import "vendor/compass/lemonade";
+// @import "vendor/compass/compass";
+// @import "vendor/compass/lemonade";
 @import "vendor/compass/animate";
 
 // checkbox styling
@@ -65,7 +65,7 @@ $susy: (
 @import "reset";
 @import "base";
 @import "utilities";
-@import "animations";
+// @import "animations";
 @import "tables";
 @import "buttons";
 @import "notices";
