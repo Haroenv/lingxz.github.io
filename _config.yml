@@ -10,14 +10,9 @@ locale                   : "en"
 title                    : "The Confused Me"
 title_separator          : "-"
 name                     : "Lingyi"
-# description              : "时间不负，何负时间"
 description              : "where words collide. perplexity is the beginning of knowledge."
 favicon                  : "/assets/images/hippopotamus.png"
-# 才子词人，自是白衣卿相
-# 心似双丝网，中有千千结
-# description              : "时光会老去，往事会微凉"
-# description              : "时光会老去，往事会微凉。静坐在窗前，掬一碗水，煮一壶茶，依旧是当年的那个味道，只不过冥冥中增了几许淡然。"
-# description              : "一抹明媚，一瓣馨香。一片盎然，一望回眸。在清丽透彻的阳光下，便是一番风景。一盏香茗，一卷书墨，一落窗明，一艾心情。在思绪幽然的专注中，便是一回自得。"
+avatar                   : "/assets/images/hippopotamus.png"
 url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 enforce_ssl              : theconfused.me
@@ -27,15 +22,7 @@ breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "staticmanv2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            : theconfusedme # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+
 # Staticman comments (full configuration in staticman.yml)
 staticman:
   branch                 : "master"
@@ -74,19 +61,12 @@ facebook:
 og_image                 : # Open Graph/Twitter default site image
 github:
   username               : "lingxz"
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
 
 # Analytics
 analytics:
   provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-96137027-1"
-
 
 # Site Author
 author:

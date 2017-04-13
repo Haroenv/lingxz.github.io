@@ -1,17 +1,16 @@
-/**
- * jquery.slimmenu.js
+/* Slightly modified version of jquery.slimmenu.js:
  * http://adnantopal.github.io/slimmenu/
  * Author: @adnantopal
  * Copyright 2013-2015, Adnan Topal (adnan.co)
  * Licensed under the MIT license.
- */
+*/
+
 (function ($, window, document, undefined) {
     "use strict";
 
     var pluginName = 'slimmenu',
         oldWindowWidth = 0,
         defaults = {
-            resizeWidth: '767',
             initiallyVisible: false,
             collapserTitle: 'Main Menu',
             animSpeed: 'medium',
@@ -72,7 +71,14 @@
                 windowWidth = $window.width(),
                 $options = this.options,
                 $menu = $(this.element),
-                $menuCollapser = $('body').find('.menu-collapser');
+                $menuCollapser = $('body').find('.menu-collapser'),
+                availableSpace = $menu.width() - 15,
+                requiredSpace = 0;
+
+            // Get initial state
+            $menu.children().outerWidth(function(i, w) {
+                requiredSpace += w;
+            });
 
             if (window['innerWidth'] !== undefined) {
                 if (window['innerWidth'] > windowWidth) {
@@ -95,7 +101,7 @@
                     $(this).children('ul').hide().end().find('.sub-toggle').removeClass('expanded').html($options.expandIcon);
                 });
 
-                if ($options.resizeWidth >= windowWidth) {
+                if (requiredSpace >= availableSpace) {
                     if ($options.indentChildren) {
                         $menu.find('ul').each(function () {
                             var $depth = $(this).parents('ul').length;

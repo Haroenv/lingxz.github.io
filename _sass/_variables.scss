@@ -14,7 +14,6 @@ $indent-var                 : 1.3em !default;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif !default;
-// $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 /* sans serif typefaces */
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif !default;
@@ -27,20 +26,13 @@ $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
 
-// $global-font-family         : $sans-serif !default;
-// $custom: Helvetica, Arial, Tahoma, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italc,400,400italic,500,700);
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Nobile');
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Podkova:700,800');
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 $custom: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
 $heading: Gochi Hand, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 $solo-heading: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-// $fancy-font: Podkova, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
 $fancy-font: Gochi Hand;
 
 $global-font-family         : $custom !default;
