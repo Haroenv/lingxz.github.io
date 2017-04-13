@@ -14,10 +14,9 @@ $indent-var                 : 1.3em !default;
 
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
-@import url('https://fonts.googleapis.com/css?family=Bitter');
 
 $custom: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$heading: Bitter, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$heading: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 $fancy-font: Gochi Hand, sans-serif;
 
 $global-font-family         : $custom !default;

@@ -78,22 +78,22 @@ After some poking around and deep soul searching (not really), these are some of
 - some kind of point system and delayed choice consequences
 - a really exciting plot(!!!) that makes the reader want to know what is going on
 
-### escape room element
+### Escape room element
 I play escape room games often (though I'm not good at it at all). Escape rooms are fun! But I also dislike a game having too much of it. This is a text adventure, after all. It would be confusing. Maybe some poking around for the player, with a few things to take, and not something full fledged escape room style. 
 
-### side quests
+### Side quests
 Side quests are what I imagine to be those plot point which are not essential to the main plot development, but may or may not confer a certain benefit to the player in later gameplay. 
 
 For example, in an action game, I would have romance as a sort of side quest. A player can get through the game without it, but perhaps a player who has gone through the romance side quest (by chance or because he happens to carry a certain item) might have increased stat points that allow him to fight certain monsters with ease. Or that there is an alternative happy ending. 
 
-### points system and delayed choice
+### Points system and delayed choice
 I don't really like games where there is an obvious bad choice, or there is a choice which makes you die immediately. I like decisions that build up. 
 
 Perhaps if you chose A previously, and you chose B in one of the later choices, then you die. Or if you chose A previously, then some of the NPCs are more likely to be suspicious, and if you get yourself into another dangerous situation, then you'll die. 
 
 Also, I think having sensible choices are important. I have played games where I think to myself, "those definitely aren't the things I would do in real life." But the problem, of course, is that writer does often want to push a plot--you can't allow the player to keep choosing to not participate (although knowing me, that is probably what I would do if given the choice). 
 
-### exciting plot
+### Exciting plot
 I say this because some of the text adventures games I played in preparing to write this game gave me the feeling of making you choose for the sake of choosing, without pushing the plot. 
 
 Personally, I feel it is important most choices have a real consequence, and they affect the plot in some way or another. 

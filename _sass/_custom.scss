@@ -1,8 +1,3 @@
-.typed, .typed-cursor {
-	font-family: $monospace;
-	font-size: 1.3em;
-}
-
 .introduction {
   font-size: $type-size-3;
   #name {
@@ -49,4 +44,8 @@
 
 .heart {
   color: $theme-color;
+}
+
+.archive__title, .page__title {
+  font-family: $fancy-font;
 }
