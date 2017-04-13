@@ -12,7 +12,7 @@
   }
 
   p, li {
-    font-size: $type-size-6;
+    font-size: 1rem; // prevent fonts from getting smaller with each layer
     line-height: 1.5;
   }
 }
@@ -32,7 +32,7 @@
   img {
     height: auto;
     @include breakpoint(max-width $small) {
-      width: 10em;
+      width: 8em;
       display: block;
       margin: 0 auto;
     }
