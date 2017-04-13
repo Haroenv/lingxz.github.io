@@ -65,7 +65,6 @@ $susy: (
 @import "reset";
 @import "base";
 @import "utilities";
-// @import "animations";
 @import "tables";
 @import "buttons";
 @import "notices";
@@ -84,9 +83,8 @@ $susy: (
 
 @import "page";
 @import "archive";
-@import "sidebar";
+@import "topnav";
 @import "print";
-@import "solo";
 @import "collections";
 @import "custom";
 @import "404";

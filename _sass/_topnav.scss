@@ -23,13 +23,19 @@
   width: 7em;
   height: 7em;
   
-  @include breakpoint(max-width $x-small) {
-    width: 6em;
-    height: 6em;
+  @include breakpoint(max-width $small) {
+    @include full();
+    height: inherit;
+    margin-bottom: 1em;
   }
 
   img {
-
+    height: auto;
+    @include breakpoint(max-width $small) {
+      width: 10em;
+      display: block;
+      margin: 0 auto;
+    }
     @include breakpoint($large) {
       padding: 5px;
     }
@@ -43,6 +49,11 @@
   padding-right: 25px;
   line-height: 1;
 
+  @include breakpoint(max-width $small) {
+    @include full();
+    h3, p, ul, li { text-align: center; }
+    ul.collapsed li { text-align: left; }
+  }
   @include breakpoint($large) {
     padding-top: 1em;
   }
