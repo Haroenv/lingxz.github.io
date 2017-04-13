@@ -6,15 +6,7 @@ tags:
     - tech
     - interactive fiction
 ---
-## TLDR
-
-I recently wrote a text adventure game called [Drifter](http://theconfused.me/drifter).
-
-<a href="http://theconfused.me/drifter"><img class="align-center" src="{{ site.url }}{{ site.baseurl }}/assets/images/drifter.png" alt="Drifter" width="300" rel="http://theconfused.me/drifter"/></a>
-
-> You wake up in someone else's body. What will you do? Can you figure out your purpose?
-
-Bug reports and feedback are welcome! 
+**tldr**: I recently wrote a text adventure game called [Drifter](http://theconfused.me/drifter). Go and play it! Source code is [here](https://github.com/lingxz/drifter) and feedback and bug reports are welcome!
 
 ---
 
@@ -24,7 +16,7 @@ It's an intriguing game, but I wasn't satisfied, and the natural response was to
 
 The one I read used `ink` (the language, not the real one), and it looks easy enough, so I just decided to stick with it. 
 
-## <span class="icon-laptop"></span> Using ink
+## Using ink
 Inkle's scripting language [`ink`](https://github.com/inkle/ink) was easy enough to learn. The [tutorial](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md) covered most of the use cases. The [inky IDE](https://github.com/inkle/inky) even supports converting to a web version--a folder with its `html`, `css`, `js` files all ready to be uploaded to a server. 
 
 These are a few things I found useful to note:
@@ -36,7 +28,7 @@ The documentation mentions shuffling briefly, but since `ink` now supports `LIST
 From what I know, there are 2 ways to go about doing this. Say you want to get a random item from [apple, orange, pear].
 - Without using a list:
 
-```javascript
+```
 === function shuffle_fruits ===
 {shuffle:
     - ~ return "apple"
@@ -47,7 +39,7 @@ From what I know, there are 2 ways to go about doing this. Say you want to get a
 
 - Choose a random number between 1 and the length of the list, then use that number to access the list element. 
 
-```python
+```
 LIST fruits = apple, orange, pear
 VAR fruit = false
 === function get_random_index ===
@@ -69,7 +61,7 @@ There are probably more advanced features, but I found that I survived quite wel
 But all in all, a very gentle learning curve.
 
 
-## <span class="icon-pencil"></span> Coming up with the plot
+## Coming up with the plot
 
 <div class="notice--warning" markdown="1">
 #### Spoiler alert

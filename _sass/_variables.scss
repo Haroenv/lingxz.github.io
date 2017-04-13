@@ -12,32 +12,18 @@ $doc-font-size              : 16 !default;
 $paragraph-indent           : false !default; // true, false (default)
 $indent-var                 : 1.3em !default;
 
-/* system typefaces */
-$serif                      : Georgia, Times, serif !default;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
-/* sans serif typefaces */
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif !default;
-$sans-serif-narrow          : $helvetica !default;
-
-/* serif typefaces */
-$georgia                    : Georgia, serif !default;
-$times                      : Times, serif !default;
-$bodoni                     : "Bodoni MT", serif !default;
-$calisto                    : "Calisto MT", serif !default;
-$garamond                   : Garamond, serif !default;
-
-
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 
-$custom: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$heading: Gochi Hand, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
-$solo-heading: Heebo, "Helvetica Neue", Arial, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$fancy-font: Gochi Hand;
+$custom: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
+$heading: Bitter, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$fancy-font: Gochi Hand, sans-serif;
 
 $global-font-family         : $custom !default;
 $header-font-family         : $heading !default;
 $caption-font-family        : $custom !default;
+$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* type scale */
 $type-size-1                : 2.441em !default;  // ~39.056px
@@ -68,10 +54,8 @@ $lighter-gray               : mix(#fff, $gray, 90%) !default;
 
 $body-color                 : #fff !default;
 $background-color           : #fff !default;
-$code-background-color      : #fafafa !default;
-$code-background-color-dark : $light-gray !default;
+$code-background-color      : $lighter-gray !default;
 $blockquote-background-color: $code-background-color;
-// $text-color                 : $dark-gray !default;
 $text-color                 : #404040 !default;
 // $border-color               : $lighter-gray !default;
 $border-color               : #b2b2b2 !default;
@@ -81,28 +65,6 @@ $success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
 $danger-color               : #ee5f5b !default;
 $info-color                 : #52adc8 !default;
-
-/* brands */
-$behance-color              : #1769FF !default;
-$dribbble-color             : #ea4c89 !default;
-$facebook-color             : #3b5998 !default;
-$flickr-color               : #ff0084 !default;
-$foursquare-color           : #0072b1 !default;
-$github-color               : #171516 !default;
-$google-plus-color          : #dd4b39 !default;
-$instagram-color            : #517fa4 !default;
-$lastfm-color               : #d51007 !default;
-$linkedin-color             : #007bb6 !default;
-$pinterest-color            : #cb2027 !default;
-$rss-color                  : #fa9b39 !default;
-$soundcloud-color           : #ff3300 !default;
-$stackoverflow-color        : #fe7a15 !default;
-$tumblr-color               : #32506d !default;
-$twitter-color              : #55acee !default;
-$vimeo-color                : #1ab7ea !default;
-$vine-color                 : #00bf8f !default;
-$youtube-color              : #bb0000 !default;
-$xing-color                 : #006567 !default;
 
 
 /* links */
@@ -145,7 +107,7 @@ $right-sidebar-width-wide   : 400px !default;
    Other
    ========================================================================== */
 
-$border-radius              : 0px !default;
+$border-radius              : 5px !default;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 // $navicon-width              : 28px !default;
 $navicon-width              : 1.5rem !default;
