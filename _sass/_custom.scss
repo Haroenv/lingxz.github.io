@@ -27,15 +27,6 @@
    display: inline-block;
 }
 
-#comment-form-submit {
-	margin-top: 1em;
-	@include span(12 of 12);
-}
-
-.breadcrumbs {
-  font-family: $global-font-family;
-}
-
 .heart {
   color: $theme-color;
 }
