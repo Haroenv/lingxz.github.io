@@ -1,16 +1,18 @@
 {% if page.previous or page.next %}
   <div class="pagination">
     {% if page.previous %}
-      <a href="{{ page.previous.url | absolute_url }}" class="pagination--pager previous" style="text-align: left; padding-left: 1em" title="{{ page.previous.title | markdownify | strip_html }}">
-        <div class="arrow"><span class="icon-back-2"></span></div> <div class="text">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}<br>{{ page.previous.title }}</div>
-      </a>
-    {% else %}
-      <a href="#" style="text-align: left; padding-right: 1em" class="pagination--pager disabled previous"><div class="arrow"><span class="icon-back-2"></span></div><div class="text">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</div></a>
+      <div class="pagination--previous">
+        <span class="direction">previous post: </span>
+        <span><a href="{{ page.previous.url | absolute_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">
+          {{ page.previous.title }}
+        </a></span>
+      </div>
     {% endif %}
     {% if page.next %}
-      <a href="{{ page.next.url | absolute_url }}" class="pagination--pager next" style="text-align: right; padding-right: 1em" title="{{ page.next.title | markdownify | strip_html }}"><div class="arrow"><span class="icon-next-2"></span></div><div class="text">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }} <br>{{ page.next.title }}</div></a>
-    {% else %}
-      <a href="#" style="text-align: right; padding-right: 1em" class="pagination--pager disabled next"><div class="arrow"><span class="icon-next-2"></span></div><div class="text">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</div></a>
+      <div class="pagination--next">
+        <span class="direction">next post:    </span>
+        <span><a href="{{ page.next.url | absolute_url }}" class="pagination--pager next" title="{{ page.next.title | markdownify | strip_html }}">{{ page.next.title }}</a></span>
+      </div>
     {% endif %}
   </div>
 {% endif %}
