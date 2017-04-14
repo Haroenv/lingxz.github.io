@@ -12,7 +12,8 @@ $(function(config) {
 
   // Input listening for queries
   var $searchInput = $('.js-algolia__input');
-  $searchInput.on('keyup', onQueryChange);
+  var $searchForm = $('#search-form');
+  $searchForm.on('submit', onQueryChange);
 
   // Content to hide/show when searching
   var $searchContent = $('.js-algolia__search-content');
@@ -36,13 +37,14 @@ $(function(config) {
 
   // Handle typing query
   function onQueryChange() {
-    lastQuery = $(this).val();
+    lastQuery = $searchInput.val();
     if (lastQuery.length === 0) {
       hideResults();
       return false;
     }
     helper.setQuery(lastQuery).search();
     showResults();
+    return false;
   }
 
   function onResult(data) {
