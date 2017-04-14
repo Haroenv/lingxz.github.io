@@ -15,13 +15,14 @@ $indent-var                 : 1.3em !default;
 @import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
-$custom: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
+$heebo: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
 $heading: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
-$fancy-font: Gochi Hand, sans-serif;
+$gochi-hand: Gochi Hand, "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
-$global-font-family         : $custom !default;
+$global-font-family         : $heebo !default;
 $header-font-family         : $heading !default;
-$caption-font-family        : $custom !default;
+$fancy-font-family          : $gochi-hand !default;
+$caption-font-family        : $heebo !default;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* type scale */
@@ -56,7 +57,6 @@ $background-color           : #fff !default;
 $code-background-color      : $lighter-gray !default;
 $blockquote-background-color: $code-background-color;
 $text-color                 : #404040 !default;
-// $border-color               : $lighter-gray !default;
 $border-color               : #b2b2b2 !default;
 
 $primary-color              : #7a8288 !default;
@@ -71,11 +71,8 @@ $info-color                 : #52adc8 !default;
 $link-color                 : $theme-color !default;
 $link-color-hover           : mix(#fff, $link-color, 40%) !default; 
 $link-color-visited         : mix(#000, $link-color, 25%) !default;
-$archive-link-color         : $text-color;
-$archive-link-color-hover   : $theme-color !default;
-$masthead-link-color        : $text-color !default;
-// $masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;
-$masthead-link-color-hover  : $theme-color !default;
+$entry-link-color           : $text-color;
+$entry-link-color-hover     : $theme-color !default;
 
 
 /*
@@ -94,22 +91,9 @@ $max-width                  : 625px !default;
 
 
 /*
-   Grid
-   ========================================================================== */
-
-$right-sidebar-width-narrow : 200px !default;
-$right-sidebar-width        : 300px !default;
-$right-sidebar-width-wide   : 400px !default;
-
-
-/*
    Other
    ========================================================================== */
 
-$border-radius              : 5px !default;
+$border-radius              : 2px !default;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-// $navicon-width              : 28px !default;
-$navicon-width              : 1.5rem !default;
-// $navicon-height             : 4px !default;
-$navicon-height             : 0.25rem !default;
 $global-transition          : all 0.2s ease-in-out !default;

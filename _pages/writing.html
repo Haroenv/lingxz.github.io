@@ -7,21 +7,23 @@ permalink: /writing/
 <div id="main" role="main">
   {% include topnav.html %}
 
-  <div class="archive">
+  <div class="page">
 
     {% capture written_label %}'None'{% endcapture %}
 
     {% for collection in site.collections reversed %}
       {% unless collection.output == false or collection.label == "posts" %}
-        <section class="collection__container">
+      <div class="list__item">
+        <article class="page__item" itemscope itemtype="http://schema.org/CreativeWork">
         {% capture label %}{{ collection.label }}{% endcapture %}
         {% if label != written_label %}
-          <h1 id="{{ label | slugify }}" class="archive__title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ site.data.collection-names[label].en | default: label }}</a></h1>
-          <p class="page__subtitle">{{ site.data.collection-names[label].description }}</p>
+          <h3 id="{{ label | slugify }}" class="page__item-title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ site.data.collection-names[label].en | default: label }}</a></h3>
+          <p class="page__meta">{{ site.data.collection-names[label].description }}</p>
           {% capture written_label %}{{ label }}{% endcapture %}
         {% endif %}
 
-        </section>
+        </article>
+      </div>
       {% endunless %}
     {% endfor %}
   </div>

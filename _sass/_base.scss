@@ -129,26 +129,10 @@ blockquote p:last-child {
   margin: 0;
 }
 
-// blockquote {
-//   margin: 2em 1em 2em 0;
-//   padding-left: 1em;
-//   padding-right: 1em;
-//   font-style: italic;
-//   border-left: 0.25em solid $primary-color;
-
-//   cite {
-//     font-style: italic;
-
-//     &:before {
-//       content: "\2014";
-//       padding-right: 5px;
-//     }
-//   }
-// }
-
 /* links */
 
 a {
+  text-decoration: none !important;
   &:focus {
     @extend %tab-focus;
   }
@@ -357,7 +341,3 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 input, textarea, input[type="submit"] {
   font-family: $global-font-family;
 }
-
-// a:hover {
-//   text-decoration: none !important;
-// }

@@ -1,7 +1,7 @@
 .introduction {
   font-size: $type-size-3;
   #name {
-    font-family: $fancy-font;
+    font-family: $fancy-font-family;
     font-size: $type-size-3;
   }
 }
@@ -32,20 +32,10 @@
 	@include span(12 of 12);
 }
 
-.page {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-  }
-}
-
 .breadcrumbs {
   font-family: $global-font-family;
 }
 
 .heart {
   color: $theme-color;
-}
-
-.archive__title, .page__title {
-  font-family: $fancy-font;
 }
