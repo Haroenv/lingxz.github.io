@@ -24,9 +24,10 @@
   height: 7em;
   
   @include breakpoint(max-width $small) {
-    @include full();
-    height: inherit;
-    margin-bottom: 1em;
+    display: none;
+    // @include full();
+    // height: inherit;
+    // margin-bottom: 1em;
   }
 
   img {
@@ -63,11 +64,11 @@
   margin: 0;
   font-family: $fancy-font-family;
   font-size: $type-size-2;
+  color: $secondary-color;
 }
 
 .site__bio {
   margin: 0;
-  font-size: $type-size-6 !important;
 }
 
 .menu-item {

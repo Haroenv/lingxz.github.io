@@ -43,9 +43,10 @@ $type-size-8                : 0.625em !default;  // ~10px
 $red                        : mix(#fff, #FF3636, 10%);
 $hippo                      : mix(#000, #98a8aa, 10%);
 $greenhat                   : mix(#000, #50dd8e, 15%);
+$darkblue                   : #496187;
 
-$theme-color                : $greenhat;
-$secondary-color            : #3498db;
+$theme-color                : #3C6997;
+$secondary-color            : #FE9000;
 $gray                       : #7a8288 !default;
 $dark-gray                  : mix(#000, $gray, 40%) !default;
 $darker-gray                : mix(#000, $gray, 60%) !default;
@@ -71,8 +72,8 @@ $info-color                 : #52adc8 !default;
 $link-color                 : $theme-color !default;
 $link-color-hover           : mix(#fff, $link-color, 40%) !default; 
 $link-color-visited         : mix(#000, $link-color, 25%) !default;
-$entry-link-color           : $text-color;
-$entry-link-color-hover     : $theme-color !default;
+$entry-link-color           : $link-color;
+$entry-link-color-hover     : $link-color-hover !default;
 
 
 /*

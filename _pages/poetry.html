@@ -6,5 +6,32 @@ subtitle: 生活不止眼前的苟且，还有诗和远方的田野
 ---
 
 {% for post in site.poetry reversed %}
-  {% include post-entry.html %}
+	{% unless post.next %}
+	  <h2 class="year">{{ post.date | date: '%Y' }}</h2>
+	{% else %}
+	  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+	  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+	  {% if year != nyear %}
+	    <h2 class="year">{{ post.date | date: '%Y' }}</h2>
+	  {% endif %}
+	{% endunless %}
+	
+	<div class="list__item">
+	  <article class="page__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+	    {% if post.date %}
+	    <p class="page__meta"> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d"}}</time></p>
+	    {% endif %}
+
+	    <h3 class="page__item-title" itemprop="headline">
+	      {% if post.link %}
+	        <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+	      {% else %}
+	        <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.title }}</a>
+	      {% endif %}
+	    </h3>
+
+	  </article>
+	</div>
+
 {% endfor %}

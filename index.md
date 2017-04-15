@@ -1,17 +1,14 @@
 ---
 layout: page
-author_profile: true
 comments: false
 ---
 <div class="introduction" markdown="1">
 Hi. My name is <span id="name">Lingyi Hu</span>, a physics undergraduate student at Imperial College London. 
-{: .text-center}
 
-When I'm not investigating <span class="icon-telescope"></span> the secrets of the universe (read: doing problem sheets), I'm usually [writing](/writing) or [coding](https://github.com/{{ site.repository }}). Or sleeping. 
-{: .text-center}
+When I'm not investigating the secrets of the universe (read: doing problem sheets), I'm usually [writing](/writing) or [coding](https://github.com/{{ site.repository }}). Or sleeping. 
 
 Say hello at <mailto:me@hulingyi.com>.
-{: .text-center}
+
 </div>
 
 <!-- <script>

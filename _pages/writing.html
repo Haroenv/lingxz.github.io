@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Writing
+subtitle: Small steps towards my ultimate dream
 permalink: /writing/
 ---
 
@@ -9,6 +10,7 @@ permalink: /writing/
 
   <div class="page">
     <h1 class="page__title">{{ page.title }}</h1>
+    <p class="page__subtitle">{{ page.subtitle }}</p>
 
     {% capture written_label %}'None'{% endcapture %}
 
@@ -19,7 +21,7 @@ permalink: /writing/
         {% capture label %}{{ collection.label }}{% endcapture %}
         {% if label != written_label %}
           <h3 id="{{ label | slugify }}" class="page__item-title"><a href=" {{ label | prepend: '/' | absolute_url }}">{{ site.data.collection-names[label].en | default: label }}</a></h3>
-          <p class="page__meta">{{ site.data.collection-names[label].description }}</p>
+          <p class="page__item-excerpt">{{ site.data.collection-names[label].description }}</p>
           {% capture written_label %}{{ label }}{% endcapture %}
         {% endif %}
 

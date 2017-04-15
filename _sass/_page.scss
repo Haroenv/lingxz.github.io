@@ -11,6 +11,10 @@
   @include breakpoint($small) {
     padding: 0 0.75rem;
   }
+  .year {
+    font-weight: bold;
+    font-family: $monospace;
+  }
 }
 
 .page__subtitle {
@@ -23,13 +27,25 @@
   padding: 1em 0;
 }
 
+.page__item {
+  margin-bottom: 1em;
+}
+
 .page__item-title {
+  margin-top: 0.25em;
   margin-bottom: 0.25em;
   font-family: $header-font-family;
   a {
-    // border-bottom: solid 1.5px $theme-color;
     color: $entry-link-color;
     &:hover { color: $entry-link-color-hover; }
+  }
+}
+
+.page__item-excerpt {
+  margin: 0;
+  color: $gray;
+  @include breakpoint($medium) {
+    padding-right: 5em;
   }
 }
 
@@ -38,7 +54,7 @@
   line-height: 1;
   font-size: $type-size-1;
   margin-bottom: 0;
-  color: $theme-color;
+  color: $text-color;
   font-family: $fancy-font-family;
 
   & + .page__meta {
@@ -48,8 +64,15 @@
 
 .page__meta {
   margin: 0 0 4px;
+  margin-bottom: 0;
   color: mix(#fff, $gray, 25%);
   font-size: $type-size-5;
+  
+  @include breakpoint($medium) {
+    float: right;
+    margin-left: 20px;
+  }
+
   p {
     margin: 0;
   }
