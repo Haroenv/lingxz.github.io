@@ -60,7 +60,7 @@ ul.slimmenu {
 
   &.collapsed {
     margin-top: 0.5em;
-    border: solid;
+    border: solid 1.5px;
     border-radius: 5px;
 
     li {
@@ -88,6 +88,7 @@ ul.slimmenu {
       .sub-toggle {
         height: 40px;
         display: block;
+        z-index: 10;
       }
     }
   }
@@ -174,13 +175,6 @@ ul.slimmenu {
 
 .slimmenu.collapsed li ul {
   width: inherit;
-}
-
-ul.slimmenu.collapsed li a {
-    transition: none;
-    -o-transition: none;
-    -moz-transition: none;
-    -webkit-transition: none;
 }
 
 ul.slimmenu > li:first-child { padding-left: 0; }
