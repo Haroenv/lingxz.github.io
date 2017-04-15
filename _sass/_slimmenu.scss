@@ -180,3 +180,10 @@ ul.slimmenu {
 ul.slimmenu > li:first-child { padding-left: 0; }
 
 ul.slimmenu.collapsed > li:first-child { padding-left: 8px; }
+
+ul.slimmenu.collapsed li a {
+    transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+}
