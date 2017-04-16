@@ -10,7 +10,7 @@
   {% endif %}
 
   <div class="topnav__content">
-    <h3 class="site__name">{{ site.title }}</h3>
+    <a href="{{ '/' | absolute_url }}"><h3 class="site__name">{{ site.title }}</h3></a>
     {% if site.description %}
       <p class="site__bio">
         {{ site.description }}
