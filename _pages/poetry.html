@@ -5,16 +5,16 @@ permalink: /poetry/
 subtitle: 生活不止眼前的苟且，还有诗和远方的田野
 ---
 
-{% for post in site.poetry reversed %}
-	{% unless post.next %}
-	  <h2 class="year">{{ post.date | date: '%Y' }}</h2>
-	{% else %}
-	  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-	  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-	  {% if year != nyear %}
-	    <h2 class="year">{{ post.date | date: '%Y' }}</h2>
-	  {% endif %}
-	{% endunless %}
+{% assign year = "" %}
+
+{% for post in site.writing reversed %}
+  {% if post.category == "poetry" %}
+
+  	{% capture nyear %}{{ post.date | date: '%Y' }}{% endcapture %}
+	{% if year != nyear %}
+		<h2 class="year">{{ post.date | date: '%Y' }}</h2>
+		{% assign year = nyear %}
+	{% endif %}
 	
 	<div class="list__item">
 	  <article class="page__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -33,5 +33,5 @@ subtitle: 生活不止眼前的苟且，还有诗和远方的田野
 
 	  </article>
 	</div>
-
+  {% endif %}
 {% endfor %}

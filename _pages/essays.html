@@ -4,17 +4,16 @@ title: "Essays"
 permalink: /essays/
 subtitle: 时光会老去，往事会微凉
 ---
+{% assign year = "" %}
 
-{% for post in site.essays reversed %}
-	{% unless post.next %}
-	  <h2 class="year">{{ post.date | date: '%Y' }}</h2>
-	{% else %}
-	  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-	  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-	  {% if year != nyear %}
-	    <h2 class="year">{{ post.date | date: '%Y' }}</h2>
-	  {% endif %}
-	{% endunless %}
+{% for post in site.writing reversed %}
+  {% if post.category == "essay" %}
+
+  	{% capture nyear %}{{ post.date | date: '%Y' }}{% endcapture %}
+	{% if year != nyear %}
+		<h2 class="year">{{ post.date | date: '%Y' }}</h2>
+		{% assign year = nyear %}
+	{% endif %}
 	
 	<div class="list__item">
 	  <article class="page__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -33,5 +32,5 @@ subtitle: 时光会老去，往事会微凉
 
 	  </article>
 	</div>
-
+  {% endif %}
 {% endfor %}

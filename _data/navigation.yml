@@ -11,7 +11,5 @@ main:
         url: /poetry
       - title: "Essays"
         url: /essays
-  - title: "Search"
-    url: /search
-  - title: "Subscribe"
+  - title: "Feed"
     url: /feed.xml

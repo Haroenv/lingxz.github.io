@@ -1,4 +1,10 @@
+.masthead {
+  background-color: #f3f3f3;
+}
+
 .topnav {
+  padding-top: 1em;
+  padding-bottom: 1em;
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
@@ -71,6 +77,11 @@
   margin: 0;
 }
 
+.site__social {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
 .menu-item {
   display: inline-block;
   a {
@@ -82,3 +93,5 @@ nav .links {
   padding: 0;
   font-size: $type-size-3;
 }
+
+
