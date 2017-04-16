@@ -1,5 +1,6 @@
 ---
 title: Setting up Jekyll
+excerpt: This is the obligatory Hello World post. 
 ---
 
 This is the obligatory Hello World post :smile:

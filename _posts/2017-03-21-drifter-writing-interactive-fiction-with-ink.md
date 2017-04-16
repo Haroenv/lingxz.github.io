@@ -5,6 +5,7 @@ tags:
     - ink
     - tech
     - interactive fiction
+excerpt: First attempt at writing a text adventure using Inkle's open source scripting language. Play it <a href="https://theconfused.me/drifter">here</a>. 
 ---
 **tldr**: I recently wrote a text adventure game called [Drifter](http://theconfused.me/drifter). Go and play it! Source code is [here](https://github.com/lingxz/drifter) and feedback and bug reports are welcome!
 
