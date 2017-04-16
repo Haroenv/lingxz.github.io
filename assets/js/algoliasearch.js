@@ -14,8 +14,12 @@ $(function(config) {
   var $searchInput = $('.js-algolia__input');
   var $searchForm = $('#search-form');
   $searchForm.on('submit', onQueryChange);
+  $searchForm.on('keyup', checkEmpty)
+
+
 
   // Content to hide/show when searching
+  var $initialContent = $('.js-algolia__initial-content');
   var $searchContent = $('.js-algolia__search-content');
   var $searchContentResults = $searchContent.find('.algolia__results');
   $searchContentResults.on('click', 'a', onLinkClick);
@@ -25,13 +29,23 @@ $(function(config) {
 
   var lastQuery;
 
+  // hide results when search is empty
+  function checkEmpty() {
+    if ($searchInput.val().length == 0) {
+      hideResults();
+      return false;
+    }
+  }
+
   // Toggle result page
   function showResults() {
     window.scroll(0, 0);
+    $initialContent.addClass('algolia__initial-content--hidden');
     $searchContent.addClass('algolia__search-content--active');
   }
 
   function hideResults() {
+    $initialContent.removeClass('algolia__initial-content--hidden');
     $searchContent.removeClass('algolia__search-content--active');
   }
 

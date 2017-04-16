@@ -9,15 +9,20 @@ layout: default
 <div id="main" role="main">
 
   <div class="page">
-
-	{% if page.alt_title %}
-		<h1 class="page__title">{{ page.alt_title }}</h1>
-	{% elsif page.title %}
-		<h1 class="page__title">{{ page.title }}</h1>
-	{% endif %}
-	{% if page.subtitle %}
-		<p class="page__subtitle">{{ page.subtitle }}</p>
-	{% endif %}
-    {{ content }}
+	<div class="js-algolia__initial-content">
+		{% if page.alt_title %}
+			<h1 class="page__title">{{ page.alt_title }}</h1>
+		{% elsif page.title %}
+			<h1 class="page__title">{{ page.title }}</h1>
+		{% endif %}
+		{% if page.subtitle %}
+			<p class="page__subtitle">{{ page.subtitle }}</p>
+		{% endif %}
+	    {{ content }}
+    </div>
+	<div class="algolia__search-content js-algolia__search-content">
+		<h1 class="page__title">Search</h1>
+		<div class="algolia__results"></div>
+	</div>
   </div>
 </div>

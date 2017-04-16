@@ -2,6 +2,20 @@
   margin-top: 1em;
 }
 
+/* Search results container */
+.algolia__initial-content {
+  display:block;
+}
+.algolia__initial-content--hidden {
+  display:none;
+}
+.algolia__search-content {
+  display:none;
+}
+.algolia__search-content--active {
+  display:block;
+}
+
 /* Search results */
 .algolia__result {
   margin-bottom: 1rem;
