@@ -49,6 +49,19 @@
   }
 }
 
+.page__item-taxonomy {
+  margin: 0;
+  color: $gray;
+  @include breakpoint($medium) {
+    padding-right: 5em;
+  }
+  a { 
+    color: $secondary-color; 
+    &:hover { color: mix(#fff, $secondary-color, 40%); }
+  }
+}
+
+
 .page__title {
   margin-top: 0;
   line-height: 1;

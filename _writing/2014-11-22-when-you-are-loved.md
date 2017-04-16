@@ -1,6 +1,6 @@
 ---
 title: "当有一个人，爱你如生命"
-category: essay
+category: essays
 ---
 
 我们一生中会遇见很多人，也会不停地和很多人说再见。

@@ -7,7 +7,7 @@ subtitle: 时光会老去，往事会微凉
 {% assign year = "" %}
 
 {% for post in site.writing reversed %}
-  {% if post.category == "essay" %}
+  {% if post.category == "essays" %}
 
   	{% capture nyear %}{{ post.date | date: '%Y' }}{% endcapture %}
 	{% if year != nyear %}

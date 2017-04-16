@@ -1,6 +1,6 @@
 ---
 title: 亲爱的陶匠们
-category: essay
+category: essays
 ---
 
 每个人都是独一无二的陶器。

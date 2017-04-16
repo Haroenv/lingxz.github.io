@@ -32,6 +32,9 @@ permalink: /writing/
           <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.title }}</a>
         {% endif %}
       </h3>
+      <p class="page__item-taxonomy">
+        posted in <a href="{{ post.category | absolute_url }}">{{ post.category }}</a>
+      </p>
 
     </article>
   </div>

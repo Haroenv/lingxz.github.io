@@ -133,7 +133,7 @@ fr: &DEFAULT_FR
   comment_btn_submit         : "Envoyer"
   comment_btn_submitted      : "Envoyé"
   comment_success_msg        : "Merci pour votre commentaire, il sera visible sur le site une fois approuvé."
-  comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessayez."
+  comment_error_msg          : "Désolé, une erreur est survenue lors de la soumission. Vérifiez que les champs obligatoires ont été remplis et réessaysez."
   loading_label              : "Chargement..."
 fr-FR:
   <<: *DEFAULT_FR

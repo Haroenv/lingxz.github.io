@@ -9,7 +9,7 @@ main:
     children: 
       - title: "Poetry"
         url: /poetry
-      - title: "Essays"
+      - title: "essays"
         url: /essays
   - title: "Feed"
     url: /feed.xml

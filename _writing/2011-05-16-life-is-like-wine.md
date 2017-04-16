@@ -1,6 +1,6 @@
 ---
 title: 生活这杯烈酒
-category: essay
+category: essays
 ---
 
 我会为另一个你，好好的生活。——题记
