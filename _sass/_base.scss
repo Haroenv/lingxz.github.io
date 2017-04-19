@@ -94,39 +94,16 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  background: $blockquote-background-color;
-  border-radius: 1em;
-  padding: 1em 3em;
-  margin: 1em;
-  position: relative;
-}
-
-blockquote:before {
-  font-family: Georgia, serif;
-  font-style: italic;
-  display: block;
-  content: "\201C";
-  font-size: 7em;
-  position: absolute;
-  left: -0.2em;
-  top: -0.2em;
-  color: #7a7a7a;
-}
-
-blockquote cite {
-  color: #999999;
-  font-size: 0.9em;
-  display: block;
-  margin-top: 5px;
-  text-align: right;
-}
- 
-blockquote cite:before {
-  content: "\2014 \2009";
-}
-
-blockquote p:last-child {
-  margin: 0;
+  margin: 1.2em 0 0 -20px;
+  border-left: 4px solid $theme-color;
+  color: $gray;
+  p { padding-left: 20px; }
+  cite {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+    &:before {content: "\2014 \2009";}
+  }
 }
 
 /* links */
