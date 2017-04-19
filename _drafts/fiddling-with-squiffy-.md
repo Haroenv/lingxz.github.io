@@ -1,5 +1,6 @@
 ---
 title: Fiddling with Squiffy
+excerpt: "Some excerpt that's unimportant"
 katex: true
 tags:
 - writing

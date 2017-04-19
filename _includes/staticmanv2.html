@@ -1,3 +1,5 @@
+{% if site.comments.provider and page.comments %}
+
 {% if site.repository and site.staticman.branch %}
   <script>
     (function ($) {
@@ -137,4 +139,5 @@
       }
     };
   </script>
+{% endif %}
 {% endif %}
