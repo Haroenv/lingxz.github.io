@@ -1,0 +1,14 @@
+<figure class="xkcd-embed" id="xkcd-{{include.num}}"></figure>
+<script src="//cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    var jsonurl = "http://xkcd.com/{{ include.num }}/info.0.json"
+    var comicurl = "http://xkcd.com/{{include.num}}/"
+    $.ajax({
+        url: jsonurl,
+        dataType: "json",
+        success: function (data) {
+            var f = "<a href=\"http://xkcd.com/{{include.num}}/\"><img src=" + data["img"] + " title=\"" + data["alt"] + "\" alt=\"http://xkcd.com/{{include.num}}/\"></img></a><figcaption>" + data["safe_title"] + " - created by <a href=\"http://xkcd.com\">xkcd</a></figcaption>";
+            $('#xkcd-{{include.num}}').html(f);
+        }
+    });
+</script>
