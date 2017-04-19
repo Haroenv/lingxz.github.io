@@ -1,30 +1,29 @@
 ---
 title: Git for noobs
-excerpt: Yet another one of the multitude of git and Github tutorials out there, for absolute noobs. 
+excerpt: I was once one of them. 
 ---
 
-This is yet another git tutorial out of the countless git tutorials out there. It has been said that the best test of understanding is being able to explain it simply, and I believe that, to a large extent. 
+> Assume the reader knows nothing. But don't assume the reader is stupid.
+> <cite>Ann Handley</cite>
 
-So here is git for the absolute noobs. Actually, it's more like, the guide I wish I had when learning git. 
+This is my attempt at making a git tutorial out of the countless git tutorials out already there. It has been said that the best test of understanding is being able to explain it simply, and I believe that, to a large extent. 
+
+So here is git for the absolute noobs---a challenge to myself to make things simple but not simplistic, a test of my own understanding, and also hopefully a helpful starting point for someone who, perhaps, is thinking of contributing to open source projects but is struggling to get to grips with git. 
 
 * TOC
 {:toc}
 
 ---
 
-You're here maybe because you just started coding and you've heard of github and want to figure out what exactly it is and how to use it, or you want to contribute to a favourite project and don't know where to start. 
-
-At least that's where I started. One summer, after learning some programming, I decided I should contribute to open source. I discovered they're hosted on Github and they use git as a version control system, and I'm like, okay cool, let's figure out what that is. So that's the context I'll be starting with. 
-
-First, **Github is not git**. They are different things, and the difference will be explained in detail later. That was my first point of confusion, because the words are so often used together. They are not the same thing, but to understand how to use Github, one has to first understand git.  
-
 ## Introduction
+
+First, **Github is not git**. It is an important conceptual distinction, and the difference will be explained later. To understand how to use Github, one has to first understand git. 
 
 ### What is git? 
 
 Git is a version control system. Remember those times when you had `report-FINAL.docx` and `report-FINAL2.docx` and `report-REALLYFINAL.docx`? A version control system is a solution for that. It keeps tracks of your history in a folder so you don't have to create multiple files or folders just so that you can retain history. It takes a series of snapshots of your folder, so that you can revert to any one of those snapshots anytime. 
 
-There are many version control systems out there, such as [cvs](http://www.nongnu.org/cvs/) and [svn](https://subversion.apache.org/), and git is one of them. 
+There are various version control systems out there, such as [cvs](http://www.nongnu.org/cvs/) and [svn](https://subversion.apache.org/), and git is one of them, the most popular of them all. 
 
 In fact, apart from retaining the history of a document, you've probably also had troubles when multiple people edit the same file, and oops, your colleague's changes overrode yours and your edits are all gone. Collaboration--that's also a problem solved by git. 
 
@@ -168,17 +167,28 @@ After forking, the repo now lives remotely on your own Github account. To get a 
 git clone git@github.com:<your-username>/astropy.git 
 ```
 
-Now, create a new branch, checkout that branch, and make some edits, commit them, push to Github, and now the edits live on your fork of the project. However, as you don't have push access to the project, you would have to create a pull request (PR) from your branch to the original project. Note that 
+Now, create a new branch, checkout that branch, and make some edits, commit them, push to Github, and now the edits live on your fork of the project. However, as you don't have push access to the project, you would have to create a pull request (PR) from your branch to the original project. 
 
-Why is it called a pull request? 
+<div class="notice--info" markdown="1">
+#### Aside: Why is it called a pull request and not a push request if you are essentially suggesting edits?
+{:.no_toc}
+
+This was confusing for me when I first heard about PRs. But the reason it is called a pull request is that you are not requesting the project owners to allow you to *push* to the repository; instead, you're requesting for them to *pull* your branch, and hence it is called a pull request, not a push request. 
+</div>
 
 Each repository would have its own contributing guidelines. Be sure to read them before contributing. 
 
-For example, read the [Astropy developer documentation](http://docs.astropy.org/en/latest/development/workflow/development_workflow.html). In my opinion it is incredibly well written and most things are not specific to Astropy, but overall applicable to anyone who wants to contributes to open source. 
+The [Astropy developer documentation](http://docs.astropy.org/en/latest/development/workflow/development_workflow.html), for example, provides a good guide for setting things up and provides guidelines for contributing to a large open source project. In my opinion it is incredibly well written and most things are not specific to Astropy, but overall applicable to anyone who wants to contributes to open source. 
 
-## A list of handy git commands
+And all that's left is to wait for the open source collaborators to review your pull request!
 
+## Conclusion
 
-## Resources
-- [https://www.git-tower.com/blog/understanding-branches-in-git/](https://www.git-tower.com/blog/understanding-branches-in-git/)
-- [https://try.github.io/](https://try.github.io/)
+There are a great many things git can do and this tutorial (if you even call it one) doesn't even begin to scratch the surface. If you need to do something complicated in git and don't know how, look to the wizards on stackoverflow for help😛. 
+
+## Resources and further reading
+- [Git Tower - Understanding branches in Git](https://www.git-tower.com/blog/understanding-branches-in-git/)
+- [Try git: An interactive git tutorial](https://try.github.io/)
+- [Astropy's developer documentation](http://docs.astropy.org/en/latest/development/workflow/development_workflow.html#pull-request)
+- [Gitmagic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
+- [Deeper inside git](https://matthew-brett.github.io/curious-git/curious_details.html)
