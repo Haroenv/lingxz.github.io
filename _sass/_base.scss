@@ -318,3 +318,12 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 input, textarea, input[type="submit"] {
   font-family: $global-font-family;
 }
+
+// remove box shadow from safari textboxes
+textarea, input:not([type=checkbox]):not([type=radio]) {
+  border: solid 1.5px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
