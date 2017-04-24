@@ -10,5 +10,5 @@ gem "jemoji", "~> 0.7"
 
 group :jekyll_plugins do 
 	# get from latest version
-	gem 'algoliasearch-jekyll', git: 'git@github.com:algolia/algoliasearch-jekyll.git', branch: 'v1'
+	gem 'algoliasearch-jekyll'
 end

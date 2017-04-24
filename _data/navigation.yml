@@ -1,15 +1,12 @@
 # main links
 main:
-  - title: "Home"
-    url: /
   - title: "Blog"
-    url: /blog
+    url: /
   - title: "Writing"
-    url: /writing
-    children: 
-      - title: "Poetry"
-        url: /poetry
-      - title: "essays"
-        url: /essays
+    url: /writing/
+  - title: "About"
+    url: /about/
   - title: "Feed"
     url: /feed.xml
+  - title: "Search"
+    url: /search/

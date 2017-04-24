@@ -6,12 +6,12 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  background-color: $background-color;
 }
 
 body {
   margin: 0;
   padding: 0;
-  color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
   color: $text-color;
@@ -20,6 +20,10 @@ body {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
   }
+}
+
+_::-webkit-full-page-media, _:future, :root .panel {
+  background-color: $background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,7 +113,7 @@ blockquote {
 /* links */
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   &:focus {
     @extend %tab-focus;
   }
@@ -155,9 +159,10 @@ td > code {
 
 hr {
   display: block;
-  margin: 1em 0;
+  margin: 2em auto;
+  max-width: 200px;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $text-color;
 }
 
 /* lists */
@@ -321,9 +326,8 @@ input, textarea, input[type="submit"] {
 
 // remove box shadow from safari textboxes
 textarea, input:not([type=checkbox]):not([type=radio]) {
-  border: solid 1.5px !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0;
+  border-radius: $border-radius;
 }

@@ -1,24 +1,12 @@
 <div class="topnav">
-  {% if site.avatar %}
-    <div class="topnav__avatar">
-      {% if site.avatar contains "://" %}
-        <img src="{{ site.avatar }}" alt="{{ site.name }}">
-      {% else %}
-        <img src="{{ site.avatar | absolute_url }}" alt="{{ site.name }}">
-      {% endif %}
-    </div>
-  {% endif %}
-
   <div class="topnav__content">
-    <a href="{{ '/' | absolute_url }}"><h3 class="site__name">{{ site.title }}</h3></a>
-    {% if site.description %}
-      <p class="site__bio">
-        {{ site.description }}
-      </p>
-    {% endif %}
+    <h3 class="site__name"><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h3>
+    <p class="site__bio">
+      <a href="{{ '/' | absolute_url }}">Physics and code.</a> <a href="{{ '/writing/' | absolute_url }}">Poetry and fiction.</a> I am <a href=" {{ '/about/' | absolute_url }} ">Lingyi</a>. 
+    </p>
     
-    <nav>
-      <ul id="navigation" class="links slimmenu">
+<!--     <nav>
+      <ul id="navigation" class="links">
         {% for link in site.data.navigation.main %}
           {% if link.url contains 'http' %}
             {% assign domain = '' %}
@@ -26,13 +14,13 @@
             {% assign domain = site.url | append: site.baseurl %}
           {% endif %}
           <li class="menu-item">
-            <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+            <a href="{{ domain }}{{ link.url }}">{{ link.title }} /</a>
           </li>
         {% endfor %}
       </ul>
       <form id="search-form">
         <input type="text" style="height:2em;" class="algolia__input js-algolia__input" autocomplete="off" placeholder="Search in this site..." />
       </form>
-    </nav>
+    </nav> -->
   </div>
 </div>

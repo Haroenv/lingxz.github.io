@@ -1,0 +1,109 @@
+/* Menu Button */
+.menu-button {
+	position: fixed;
+	z-index: 1000;
+	margin: 1em;
+	padding: 0;
+	width: 2.5em;
+	height: 2.25em;
+	border: none;
+	font-size: 1.5em;
+	color: #373a47;
+	color: $text-color;
+	background: transparent;
+	right: 0;
+	top: 0;
+}
+
+.menu-button span {
+	display: none;
+}
+
+.menu-button:focus {
+	outline: 0;
+}
+
+/* Menu */
+.menu-wrap {
+	position: fixed;
+	z-index: 999;
+	// background: #ebedf4;
+	background: mix(#000, $background-color, 2%);
+	-webkit-transition: width 0.3s, height 0.3s;
+	transition: width 0.3s, height 0.3s;
+	width: 0;
+	height: 0;
+	font-size: 1.5em;
+	right: 1em;
+	-webkit-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+	border-radius: $border-radius;
+}
+
+.menu {
+	height: 100%;
+	opacity: 0;
+	font-size: 0.65em;
+	color: #64697d;
+}
+
+.profile {
+	display: inline-block;
+	line-height: 42px;
+	padding: 1em;
+}
+
+.link-list {
+	padding: 1.35em 0;
+	margin: 0 0.75em;
+	font-family: $global-font-family;
+}
+
+.link-list a {
+	display: block;
+	margin: 0.25em 0;
+	color: #7d8194;
+	padding: 0.5em 1.5em;
+}
+
+.link-list a:hover,
+.link-list a:focus {
+	color: #64697d;
+}
+
+.link-list a span {
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.icon-list {
+	position: absolute;
+	right: 1em;
+	bottom: 0.9em;
+}
+
+.icon-list a {
+	font-size: 1.5em;
+	margin-left: 0.25em;
+	color: rgba(125,129,148,0.5);
+}
+
+/* Shown menu */
+.show-menu .content::before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.show-menu .menu-wrap {
+	width: 280px;
+	height: 10.5em;
+}
+
+.show-menu .menu {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}

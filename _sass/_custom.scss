@@ -1,7 +1,9 @@
 .introduction {
   font-size: $type-size-4;
   #name {
-    font-family: $fancy-font-family;
+    font-family: $header-font-family;
+    font-style: italic;
+    font-weight: bold;
     font-size: $type-size-3;
   }
 }
@@ -32,3 +34,12 @@
 }
 
 .katex-display { font-size: $type-size-4; }
+
+#search-form {
+  margin-top: 1em;
+}
+
+.english {
+  font-style: italic !important; 
+  font-weight: bold !important;
+}

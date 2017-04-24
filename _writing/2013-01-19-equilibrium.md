@@ -1,6 +1,7 @@
 ---
 title: Equilibrium
 category: poetry
+language: english
 ---
 
 we finally settle in the reaction mixture  

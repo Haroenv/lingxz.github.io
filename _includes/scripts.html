@@ -1,6 +1,15 @@
 {% include algoliasearch.html %}
 
 <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/1.1.0/highlightjs-line-numbers.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+	hljs.initLineNumbersOnLoad();
+</script>
+
+<script src="https://use.typekit.net/hft0rwk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 {% include analytics.html %}
 {% include staticmanv2.html %}

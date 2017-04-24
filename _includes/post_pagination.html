@@ -3,7 +3,7 @@
     {% if page.previous %}
       <div class="pagination--previous">
         <span class="direction">previous post: </span>
-        <span><a href="{{ page.previous.url | absolute_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">
+        <span><a href="{{ page.previous.url | absolute_url }}" class="pagination--pager {{ page.previous.language }}" title="{{ page.previous.title | markdownify | strip_html }}">
           {{ page.previous.title }}
         </a></span>
       </div>
@@ -11,7 +11,7 @@
     {% if page.next %}
       <div class="pagination--next">
         <span class="direction">next post:    </span>
-        <span><a href="{{ page.next.url | absolute_url }}" class="pagination--pager next" title="{{ page.next.title | markdownify | strip_html }}">{{ page.next.title }}</a></span>
+        <span><a href="{{ page.next.url | absolute_url }}" class="pagination--pager next {{ page.next.language }}" title="{{ page.next.title | markdownify | strip_html }}">{{ page.next.title }}</a></span>
       </div>
     {% endif %}
   </div>

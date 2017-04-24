@@ -1,5 +1,5 @@
 .masthead {
-  background-color: #f3f3f3;
+  // background-color: #f3f3f3;
 }
 
 .topnav {
@@ -10,7 +10,7 @@
 
   @include clearfix();
   margin: auto;
-  margin-bottom: 2em;
+  margin-top: 1em;
   max-width: $max-width;
 
   h2, h3, h4, h5, h6 {
@@ -23,44 +23,11 @@
   }
 }
 
-.topnav__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 7em;
-  height: 7em;
-  
-  @include breakpoint(max-width $small) {
-    display: none;
-    // @include full();
-    // height: inherit;
-    // margin-bottom: 1em;
-  }
-
-  img {
-    height: auto;
-    @include breakpoint(max-width $small) {
-      width: 8em;
-      display: block;
-      margin: 0 auto;
-    }
-    @include breakpoint($large) {
-      padding: 5px;
-    }
-  }
-}
-
 .topnav__content {
-  display: table-cell;
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
-
-  @include breakpoint(max-width $small) {
-    @include full();
-    h3, p, ul, li { text-align: center; }
-    ul.collapsed li { text-align: left; }
-  }
   @include breakpoint($large) {
     padding-top: 1em;
   }
@@ -69,29 +36,48 @@
 .site__name {
   margin: 0;
   font-family: $fancy-font-family;
-  font-size: $type-size-2;
-  color: $secondary-color;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $type-size-1;
+  @include breakpoint(max-width $x-small) {
+    font-size: $type-size-2;
+  }
+  a {
+    color: $text-color;
+    opacity: 0.5;
+    transition: .3s opacity ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .site__bio {
+  color: $gray;
   margin: 0;
-}
-
-.site__social {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+  a {
+    color: inherit;
+    &:hover {
+      color: $text-color;
+      border-bottom: solid 1px;
+    }
+  }
 }
 
 .menu-item {
   display: inline-block;
-  a {
-    color: $text-color;
-  }
 }
 
 nav .links {
   padding: 0;
-  font-size: $type-size-3;
+  font-size: $type-size-4;
+  padding-bottom: .5em;
+  a {
+    color: $text-color;
+    &:hover {
+      color: $text-color;
+    }
+  }
 }
 
 

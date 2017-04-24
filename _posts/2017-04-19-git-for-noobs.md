@@ -42,7 +42,7 @@ To start off, you need to tell git to start tracking changes in your folder. If 
 
 Let's say we want to version control a folder called `flowers`. Navigate into `flowers` on the command line, and do 
 
-```
+```shell
 git init
 ```
 
@@ -54,19 +54,19 @@ This is called committing your changes. But before you commit, you have to stage
 
 Let's say you added a new file called `tulips.md`. You can stage it by doing
 
-```
+```shell
 git add tulips.md
 ```
 
 or
 
-```
+```shell
 git add .
 ```
 
 The single dot `.` simply tells git to stage all changes in the folder. At this point, your file `tulips.md` is staged, ready to be committed. Then you can commit your staged files by doing
 
-```
+```shell
 git commit -m "here is a commit message!"
 ```
 
@@ -98,7 +98,7 @@ After committing your changes locally, you have to inform your remote repository
 
 Before you can push, you have to tell your local folder about the remote: 
 
-```
+```shell
 git remote add <remote name> <remote url>
 ```
 
@@ -108,7 +108,7 @@ The remote name can be anything you like. In many tutorials, you'll see it named
 
 After setting up the remote, the command to push is: 
 
-```
+```shell
 git push <remote name> <branch name>
 ```
 
@@ -118,7 +118,7 @@ It is only at this point that, if you're collaborating, your teammates are infor
 
 The equivalent reverse action is pulling other people's changes. If the remote is already set, you can do this simply by 
 
-```
+```shell
 git pull
 ```
 
@@ -138,19 +138,19 @@ By convention, the default branch is the master branch.
 
 To create a branch named hotfix from the current branch and switch to it: 
 
-```
+```shell
 git checkout -b hotfix
 ```
 
 To switch branches, simply do
 
-```
+```shell
 git checkout <branch name>
 ```
 
 To merge `hotfix` back into `master`, do
 
-```
+```shell
 git checkout master
 git merge hotfix
 ```
@@ -163,7 +163,7 @@ If you're looking to contribute to an open source project on Github, there are a
 
 After forking, the repo now lives remotely on your own Github account. To get a local copy of the remote repo, you would have to clone it. For example, if you want to contribute to [astropy](http://www.astropy.org/), you would first fork the repo from the astropy Github page, then do: 
 
-```
+```shell
 git clone git@github.com:<your-username>/astropy.git 
 ```
 

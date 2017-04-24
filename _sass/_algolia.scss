@@ -19,9 +19,13 @@
 /* Search results */
 .algolia__result {
   margin-bottom: 1rem;
+  h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0;
+  }
 }
 .algolia__result-link {
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
 }
 .algolia__result-date {
   font-size:0.8rem;
@@ -36,4 +40,12 @@
 .algolia__result-text .algolia__result-highlight {
   background-color:#D3E8F6;
   background-color: rgba(38,139,210,0.2);
+}
+
+.algolia__no-result {
+  font-family: $header-font-family;
+  font-size: $type-size-3;
+  @include breakpoint(max-width $small) {
+    font-size: $type-size-4;
+  }
 }

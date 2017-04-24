@@ -25,6 +25,8 @@ $(document).ready(function(){
   // FitVids init
   $("#main").fitVids();
 
+  balanceText();
+
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").fadeToggle("fast", function() {});

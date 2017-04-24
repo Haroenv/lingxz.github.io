@@ -11,10 +11,6 @@
   @include breakpoint($small) {
     padding: 0 0.75rem;
   }
-  .year {
-    font-weight: bold;
-    font-family: $monospace;
-  }
 }
 
 .page__subtitle {
@@ -66,9 +62,9 @@
   margin-top: 0;
   line-height: 1;
   font-size: $type-size-1;
-  margin-bottom: 0;
+  margin-bottom: 0.25em;
   color: $text-color;
-  font-family: $fancy-font-family;
+  font-family: $header-font-family;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -93,4 +89,8 @@
   a {
     color: inherit;
   }
+}
+
+.pagination { 
+  font-family: $header-font-family; 
 }

@@ -22,7 +22,7 @@ subtitle: 时光会老去，往事会微凉
 	    <p class="page__meta"> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d"}}</time></p>
 	    {% endif %}
 
-	    <h3 class="page__item-title" itemprop="headline">
+	    <h3 class="page__item-title {{ post.language }}" itemprop="headline">
 	      {% if post.link %}
 	        <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
 	      {% else %}

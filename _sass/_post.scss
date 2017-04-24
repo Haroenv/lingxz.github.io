@@ -26,15 +26,17 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    font-family: $global-font-family;
   }
 }
 
 .post__title {
   margin-top: 0;
   line-height: 1;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.3em;
   font-size: $type-size-1;
   margin-bottom: 0;
+  font-family: $header-font-family !important;
 
   & + .post__meta {
     margin-top: -0.5em;

@@ -15,16 +15,16 @@ I recently got inspired to write interactive fiction, after playing [The Train](
 
 It's an intriguing game, but I wasn't satisfied, and the natural response was to make my own. 
 
-The one I read used `ink` (the language, not the real one), and it looks easy enough, so I just decided to stick with it. 
+The one I read used Ink (the language, not the real one), and it looks easy enough, so I just decided to stick with it. 
 
 ## Using ink
-Inkle's scripting language [`ink`](https://github.com/inkle/ink) was easy enough to learn. The [tutorial](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md) covered most of the use cases. The [inky IDE](https://github.com/inkle/inky) even supports converting to a web version--a folder with its `html`, `css`, `js` files all ready to be uploaded to a server. 
+Inkle's scripting language [Ink](https://github.com/inkle/ink) was easy enough to learn. The [tutorial](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md) covered most of the use cases. The [inky IDE](https://github.com/inkle/inky) even supports converting to a web version--a folder with its `html`, `css`, `js` files all ready to be uploaded to a server. 
 
 These are a few things I found useful to note:
 
 If you declare options with the usual `*`, they disappear after being clicked once. This is not a problem if you don't intend to revisit the knot, but if you do, you see your options disappearing after every visit. The way to fix this is to use `+` instead of `*`, that way options persist. 
 
-The documentation mentions shuffling briefly, but since `ink` now supports `LISTS`, what if you want to shuffle from a list? 
+The documentation mentions shuffling briefly, but since Ink now supports `LISTS`, what if you want to shuffle from a list? 
 
 From what I know, there are 2 ways to go about doing this. Say you want to get a random item from [apple, orange, pear].
 - Without using a list:

@@ -12,18 +12,15 @@ $doc-font-size              : 16 !default;
 $paragraph-indent           : false !default; // true, false (default)
 $indent-var                 : 1.3em !default;
 
-@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
-
 $heebo: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$heading: Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$heading: Lora, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", serif;
 $gochi-hand: Gochi Hand, "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
 $global-font-family         : $heebo !default;
 $header-font-family         : $heading !default;
 $fancy-font-family          : $gochi-hand !default;
 $caption-font-family        : $heebo !default;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace                  : "inconsolata",monospace !default;
 
 /* type scale */
 $type-size-1                : 2.441em !default;  // ~39.056px
@@ -40,12 +37,6 @@ $type-size-8                : 0.625em !default;  // ~10px
    Colors
    ========================================================================== */
 
-$red                        : mix(#fff, #FF3636, 10%);
-$hippo                      : mix(#000, #98a8aa, 10%);
-$greenhat                   : mix(#000, #50dd8e, 15%);
-$darkblue                   : #496187;
-
-// $theme-color                : #3C6997;
 $theme-color                : #1756a9;
 $secondary-color            : #FE9000;
 $gray                       : #7a8288 !default;
@@ -55,10 +46,11 @@ $light-gray                 : mix(#fff, $gray, 50%) !default;
 $lighter-gray               : mix(#fff, $gray, 90%) !default;
 
 $body-color                 : #fff !default;
-$background-color           : #fff !default;
+$background-color           : #fffdfd !default;
 $code-background-color      : $lighter-gray !default;
 $blockquote-background-color: $code-background-color;
-$text-color                 : #404040 !default;
+// $text-color                 : #404040 !default;
+$text-color                 : #393E41 !default;
 $border-color               : #b2b2b2 !default;
 
 $primary-color              : #7a8288 !default;
@@ -69,7 +61,6 @@ $info-color                 : #52adc8 !default;
 
 
 /* links */
-// $link-color                 : $info-color !default;
 $link-color                 : $theme-color !default;
 $link-color-hover           : mix(#fff, $link-color, 40%) !default; 
 $link-color-visited         : mix(#000, $link-color, 25%) !default;

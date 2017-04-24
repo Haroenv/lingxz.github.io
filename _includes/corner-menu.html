@@ -1,0 +1,15 @@
+<div class="menu-wrap">
+  <nav class="menu">
+    <div class="link-list">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = site.url | append: site.baseurl %}
+        {% endif %}
+          <a href="{{ domain }}{{ link.url }}"><span>{{ link.title }}</span></a>
+      {% endfor %}
+    </div>
+  </nav>
+</div>
+<button class="menu-button" id="open-button"><i class="fa fa-fw fa-bars"></i><span>Open Menu</span></button>

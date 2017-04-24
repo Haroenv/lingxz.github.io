@@ -15,11 +15,11 @@ Then the next question is: dynamic or static?
 
 A dynamic site seems excessive for what is essentially going to be static content, so static site it is. 
 
-Everything else followed quite painlessly from there. Jekyll was the obvious choice--it has the largest community and is supported by Jekyll. 
+Everything else followed quite painlessly from there. Jekyll was the obvious choice--it has the largest community and is supported by Github. 
 
 And I could also learn some Ruby. 
 
-It was a good learning process. I started out with the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes) by Michael Rose, and while it presented quite a steep learning curve, I picked up some `sass` on the way too. 
+It was a good learning process. I started out with the [Minimal Mistakes theme](https://github.com/mmistakes/minimal-mistakes) by Michael Rose, and while it presented quite a steep learning curve, I picked up some Sass on the way too. 
 
 Setting up the commenting system took a bit more hassle, since I didn't like how Disqus looks and the theme currently does not support Staticman v2 (though it supports a great many other things). But Michael Rose's [guide to setting up Staticman v2](https://mademistakes.com/articles/improving-jekyll-static-comments/) is comprehensive enough and now threaded comments are working perfectly. The only problem: I still haven't gotten email notifications to work yet. 
 
