@@ -12,7 +12,7 @@ subtitle: 生活不止眼前的苟且，还有诗和远方的田野
 
   	{% capture nyear %}{{ post.date | date: '%Y' }}{% endcapture %}
 	{% if year != nyear %}
-		<h2 class="year">{{ post.date | date: '%Y' }}</h2>
+		<h2 class="year english">{{ post.date | date: '%Y' }}</h2>
 		{% assign year = nyear %}
 	{% endif %}
 	
