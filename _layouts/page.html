@@ -2,20 +2,17 @@
 layout: default
 ---
 
-<div class="masthead">
-  {% include topnav.html %}
-</div>
 
-<div id="main" role="main">
-  <div class="page">
-    {% if page.alt_title %}
-      <h1 class="page__title {{ page.language }}">{{ page.alt_title }}</h1>
-    {% elsif page.title %}
-      <h1 class="page__title {{ page.language }}">{{ page.title }}</h1>
+<article class="post">
+  <header class="post-header">
+    {% if page.image %}
+      <div class="cover-image">
+        <img src="{{ page.image }}" alt="" />
+      </div>
     {% endif %}
-    {% if page.subtitle %}
-      <p class="page__subtitle">{{ page.subtitle }}</p>
-    {% endif %}
+    <h1 class="post-title">{{ page.title | xml_escape }}</h1>
+  </header>
+  <div class="post-content">
     {{ content }}
   </div>
-</div>
+</article>

@@ -1,18 +1,14 @@
-{% if page.previous or page.next %}
-  <div class="pagination">
-    {% if page.previous %}
-      <div class="pagination--previous">
-        <span class="direction">previous post: </span>
-        <span><a href="{{ page.previous.url | absolute_url }}" class="pagination--pager {{ page.previous.language }}" title="{{ page.previous.title | markdownify | strip_html }}">
-          {{ page.previous.title }}
-        </a></span>
-      </div>
-    {% endif %}
-    {% if page.next %}
-      <div class="pagination--next">
-        <span class="direction">next post:    </span>
-        <span><a href="{{ page.next.url | absolute_url }}" class="pagination--pager next {{ page.next.language }}" title="{{ page.next.title | markdownify | strip_html }}">{{ page.next.title }}</a></span>
-      </div>
-    {% endif %}
-  </div>
-{% endif %}
+<nav class="read-next">
+  {% if page.next %}
+    <a class="read-next-newer" href="{{ page.next.url | absolute_url }}">
+      <span class="read-next-label">Newer Post</span>
+      <span class="read-next-title">{{ page.next.title | markdownify | strip_html }}</span>
+    </a>
+  {% endif %}
+  {% if page.previous %}
+    <a class="read-next-older" href="{{ page.previous.url | absolute_url }}">
+      <span class="read-next-label">Older Post</span>
+      <span class="read-next-title">{{ page.previous.title | markdownify | strip_html }}</span>
+    </a>
+  {% endif %}
+</nav>

@@ -2,6 +2,11 @@
    Comments
    ========================================================================== */
 
+.page__comments {
+  margin-top: 2em;
+  border-top: solid 1px $border-color;
+}
+
 .comment {
   position: relative;
   margin-bottom: 4em;
@@ -34,7 +39,6 @@
 }
 
 .comment__timestamp {
-  font-family: $global-font-family;
   font-size: 0.8em;
 
   a {

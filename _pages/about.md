@@ -1,8 +1,6 @@
 ---
-layout: page
 permalink: /about/
 title: About
-alt_title: "About"
 subtitle: "Hey, you found me!"
 ---
 <div class="introduction" markdown="1">

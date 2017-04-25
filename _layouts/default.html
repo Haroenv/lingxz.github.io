@@ -1,42 +1,61 @@
----
----
+<!DOCTYPE html>
+<html>
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-  </head>
+{% include head.html %}
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include browser-upgrade.html %}
-    {% include corner-menu.html %}
+<body>
 
-    {{ content }}
+  <header class="site-header">
+    <div class="container">
+      {% include site-nav.html %}
 
-    <div class="page__footer">
-      <footer>
-        {% include footer.html %}
-      </footer>
+      {% if paginator %}
+        <h1 class="site-title">
+          <a href="{{ '/' | absolute_url }}">{{ site.title | xml_escape }}</a>
+        </h1>
+      {% else %}
+        <div class="site-title">
+          <a href="{{ '/' | absolute_url }}/">{{ site.title | xml_escape }}</a>
+        </div>
+      {% endif %}
+
+      {% if site.tagline %}
+        <div class="site-tagline">
+          {{ site.tagline }}
+        </div>
+      {% endif %}
     </div>
+  </header>
 
-    {% include scripts.html %}
+  <main class="container">
+    {{ content }}
+  </main>
 
-    {% if page.katex %}
-      <!-- Load KaTeX -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
-      <script>
-        $("script[type='math/tex']").replaceWith(function() {
-            var tex = $(this).text();
-            return katex.renderToString(tex, {displayMode: false});
-        });
+  <footer class="site-footer">
+    <div class="container">
+      {% include footer-links.html %}
+      © {{ site.time | date: "%Y" }} {{ site.author }}
+    </div>
+  </footer>
 
-        $("script[type='math/tex; mode=display']").replaceWith(function() {
-            var tex = $(this).html();
-            return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
-        });
-      </script>
-    {% endif %}
 
-  </body>
+  {% include scripts.html %}
+
+  {% if page.katex %}
+    <!-- Load KaTeX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+    <script>
+      $("script[type='math/tex']").replaceWith(function() {
+          var tex = $(this).text();
+          return katex.renderToString(tex, {displayMode: false});
+      });
+      $("script[type='math/tex; mode=display']").replaceWith(function() {
+          var tex = $(this).html();
+          return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+      });
+    </script>
+  {% endif %}
+
+</body>
 </html>

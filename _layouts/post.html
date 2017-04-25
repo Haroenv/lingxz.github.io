@@ -2,40 +2,82 @@
 layout: default
 ---
 
-<div id="main" role="main">
-  <article class="post" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
 
-    <div class="post__inner-wrap" style="padding-top: 2em;">
-      <header>
-        {% if page.title %}<h1 class="post__title balance-text {{ page.language }}" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-        
-        {% if page.date %}
-        <p class="post__meta"> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }} </time></p>
-        {% endif %}
-      </header>
-      
-      <section class="post__content" itemprop="text">
-        {{ content }}
-        
-        {% if page.share %}{% include social-share.html %}{% endif %}
+{% assign author = site.authors[page.author] %}
 
-        {% include post_pagination.html %}
-
-      </section>
-
-    </div>
-
-    {% if site.comments and page.comments != false %}
-      {% include comments.html %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    {% if page.image %}
+      <div class="cover-image">
+        <img src="{{ page.image }}" alt="" itemprop="image" />
+      </div>
     {% endif %}
+    <h1 class="post-title" itemprop="headline">{{ page.title | xml_escape }}</h1>
+    <ul class="x-separated-list x-separated-list-meta">
+      {% if author %}
+        <li class="post-byline">
+          {% if author.website %}
+            <a href="{{ author.website }}">{{ author.name }}</a>
+          {% else %}
+            {{ author.name }}
+          {% endif %}
+        </li>
+      {% endif %}
+      <li class="post-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </time>
+      </li>
+    </ul>
+  </header>
 
-  </article>
-</div>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
-<div class="masthead" style="margin-top: -2em;">
-{% include topnav.html %}
-</div>
+  <div class="share">
+    <span class="share-title">Share this on:</span>
+    {% assign url = page.url | absolute_url %}
+    <ul class="x-separated-list">
+      <li>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }} {{ url }}">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ url }}"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a>
+      </li>
+      <li>
+        <a href="https://plus.google.com/share?url={{ url }}"
+            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">Google+</a>
+      </li>
+    </ul>
+  </div>
+
+</article>
+
+
+{% if author.bio %}
+  <div class="post-author {% if author.avatar %}has-avatar{% endif %}">
+    {% if author.avatar %}
+      {% if author.website %}
+        <a href="{{ author.website }}" class="post-author-avatar" aria-hidden="true" style="background-image: url({{ author.avatar }})"></a>
+      {% else %}
+        <div class="post-author-avatar" style="background-image: url({{ author.avatar }})"></div>
+      {% endif %}
+    {% endif %}
+    <div class="post-author-name">
+      {% if author.website %}
+        <a href="{{ author.website }}">{{ author.name }}</a>
+      {% else %}
+        {{ author.name }}
+      {% endif %}
+    </div>
+    <p class="post-author-bio">{{ author.bio }}</p>
+  </div>
+{% endif %}
+
+{% include post_pagination.html %}
+
+{% if site.comments and page.comments != false %}
+  {% include comments.html %}
+{% endif %}

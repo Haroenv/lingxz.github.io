@@ -84,9 +84,9 @@ select {
   border: 1px solid mix(#fff, #000, 80%);
   // border-radius: $border-radius;
 
-  &:hover {
-    border-color: mix(#fff, $primary-color, 50%);
-  }
+  // &:hover {
+  //   border-color: mix(#fff, $primary-color, 50%);
+  // }
 }
 
 .input-mini {
@@ -220,11 +220,11 @@ textarea[readonly] {
 
 input:focus,
 textarea:focus {
-  border-color: $primary-color;
+  // border-color: $primary-color;
   outline: 0;
   outline: thin dotted \9;
   border: 1px solid darken($gray, 5);
-  box-shadow: -8px 0px 0 0 $theme-color;
+  // box-shadow: -8px 0px 0 0 $theme-color;
   outline: none;
 }
 
@@ -233,28 +233,6 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
   box-shadow: none;
-}
-
-
-/*
-   Help text
-   ========================================================================== */
-
-.help-block,
-.help-inline {
-  color: $info-color;
-}
-
-.help-block {
-  display: block;
-  margin-bottom: 1em;
-  line-height: 1em;
-}
-
-.help-inline {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 5px;
 }
 
 
@@ -382,39 +360,4 @@ select:focus {
     opacity: 0;
   }
 
-}
-
-
-/*
-   Google search form
-   ========================================================================== */
-
-#goog-fixurl {
-  ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    li {
-      list-style-type: none;
-    }
-  }
-}
-
-#goog-wm-qt {
-  width: auto;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  display: inline-block;
-  font-size: $type-size-6;
-  background-color: #fff;
-  color: #000;
-  border-width: 2px !important;
-  border-style: solid !important;
-  border-color: lighten(#000,50);
-  border-radius: $border-radius;
-}
-
-#goog-wm-sb {
-  @extend .btn;
 }

@@ -1,23 +1,35 @@
-# Site Settings
-locale                   : "en"
-title                    : "The Confused Me"
-title_separator          : "-"
-name                     : "Lingyi"
-description              : "Where words collide, perplexity is the beginning of knowledge."
-favicon                  : "/assets/images/typewriter.png"
-url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-enforce_ssl              : theconfused.me
-repository               : "lingxz/lingxz.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-words_per_minute         : 200
-comments:
-  provider               : "staticmanv2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+# Site title
+title: The Confused Me
 
-# Staticman comments (full configuration in staticman.yml)
-staticman:
-  branch                 : "master"
-atom_feed:
-  path                   : # blank (default) uses feed.xml
+# Tagline below the site title on post list pages
+tagline: Physics and code. Poetry and fiction. I am Lingyi. 
+description:
+favicon: '/assets/images/typewriter.png'
+url: "https://theconfused.me"
+baseurl: ""
+enforce_ssl: theconfused.me
+repository: "lingxz/lingxz.github.io"
+
+# The site cover image on the home page
+# image: /crossing-jekyll/images/site-image.jpg
+
+# The shortname for your Disqus site to enable comments
+disqus_shortname:
+
+# Your Google Analytics tracking code
+google_analytics_tracking_id:
+
+
+# Site navigation
+nav:
+  - title: "Home"
+    url:   "/"
+  - title: "Writing"
+    url: "/writing/"
+  - title: "About"
+    url: "/about/"
+  - title: "Search"
+    url: "/search/"
 
 # algolia search
 algolia:
@@ -35,70 +47,36 @@ algolia:
     - search.html
     - index.md
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-github:
-  username               : "lingxz"
-
-# Analytics
-analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-96137027-1"
-
-# Reading Files
-include:
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# The links in the site footer
+footer_links:
+  - title: "RSS"
+    url:   "/feed.xml"
+  - title: "GitHub"
+    url:   "https://github.com/lingxz/"
 
 
-# Conversion
+# Author information
+author: Lingyi Hu
+
+
+# Extra Open Graph and Twitter Cards settings for social sharing
+
+# Fallback og:image when no page.image or site.image. Facebook requires image be
+# at least 200 x 200 pixels.
+og_image:
+
+# twitter:site. Your Twitter username without "@"
+twitter_site:
+
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: page/:num/
+gems: [jekyll-paginate]
+
+permalink: /blog/:title/
 markdown: kramdown
 highlighter: null
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
 # Markdown Processing
 kramdown:
   input: GFM
@@ -113,23 +91,6 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /blog/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /blog/page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-collections:
-  writing:
-    output: true
-    permalink: /:collection/:title/
 
 # Plugins
 gems:
@@ -148,43 +109,22 @@ whitelist:
   - jekyll-feed
   - jemoji
 
+include:
+  - _pages
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+comments:
+  provider: "staticmanv2"
+# Staticman comments (full configuration in staticman.yml)
+staticman:
+  branch                 : "master"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
 
 
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
+collections:
+  writing:
+    output: true
+    permalink: /:collection/:title/
 
 # Defaults
 defaults:
@@ -195,20 +135,17 @@ defaults:
     values:
       layout: page
       comments: false
-      language: english
-  # _posts
+      # _writing
   - scope:
       path: ""
       type: posts
     values:
       layout: post
       comments: true
-      language: english
-  # _writing
+    # _writing
   - scope:
       path: ""
       type: writing
     values:
       layout: post
-      share: false
-      language: chinese
+      comments: true

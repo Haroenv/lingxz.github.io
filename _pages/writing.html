@@ -1,42 +1,31 @@
 ---
-layout: page
-title: Writing
-alt_title: To Bleed At A Typewriter
+layout: default
 permalink: /writing/
+title: Writing
 ---
 
-<p class="page__subtitle balance-text">"There is nothing to writing. All you do is sit down at a typewriter and bleed." &mdash; Ernest Hemingway</p>
-
-{% for post in site.writing reversed %}
-  {% unless post.next %}
-    <h2 class="year english">{{ post.date | date: '%Y' }}</h2>
-  {% else %}
-    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-    {% if year != nyear %}
-      <h2 class="year english">{{ post.date | date: '%Y' }}</h2>
-    {% endif %}
-  {% endunless %}
-  
-  <div class="list__item">
-    <article class="page__item" itemscope itemtype="http://schema.org/CreativeWork">
-
-      {% if post.date %}
-      <p class="page__meta"> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d"}}</time></p>
-      {% endif %}
-
-      <h3 class="page__item-title {{ post.language }}" itemprop="headline">
-        {% if post.link %}
-          <a href="{{ post.link }}">{{ post.title }}</a> <a href="{{ post.url | absolute_url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-        {% else %}
-          <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p class="page__item-taxonomy">
-        posted in <a href="{{ post.category | absolute_url }}">{{ post.category }}</a>
-      </p>
-
+<div class="post-list">
+  {% for post in site.writing reversed %}
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h2 class="post-title" itemprop="headline"><a href="{{ post.url | absolute_url }}">{{ post.title | xml_escape }}</a></h2>
+      </header>
+      <div class="post-footer">
+        <ul class="x-separated-list x-separated-list-meta x-separated-list-small">
+          {% assign author = site.authors[post.author] %}
+          {% if author %}
+            <li class="post-byline">
+              {% if author.website %}
+                <a href="{{ author.website }}">{{ author.name }}</a>
+              {% else %}
+                {{ author.name }}
+              {% endif %}
+            </li>
+          {% endif %}
+          <li class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %-d, %Y" }}</time></li>
+        </ul>
+      </div>
     </article>
-  </div>
+  {% endfor %}
+</div>
 
-{% endfor %}
