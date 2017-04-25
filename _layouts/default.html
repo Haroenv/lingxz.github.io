@@ -8,18 +8,22 @@
   <header class="site-header">
     <div class="container">
       {% include site-nav.html %}
-
-      {% if paginator %}
+      
+      {% if page.large_title %}
+        <h1 class="site-title">
+          <a href="{{ page.url | absolute_url }}">{{ page.large_title | xml_escape }}</a>
+        </h1>
+      {% elsif site.title %}
         <h1 class="site-title">
           <a href="{{ '/' | absolute_url }}">{{ site.title | xml_escape }}</a>
         </h1>
-      {% else %}
-        <div class="site-title">
-          <a href="{{ '/' | absolute_url }}/">{{ site.title | xml_escape }}</a>
-        </div>
       {% endif %}
 
-      {% if site.tagline %}
+      {% if page.tagline %}
+        <div class="site-tagline">
+          {{ page.tagline }}
+        </div>
+      {% elsif site.tagline %}
         <div class="site-tagline">
           {{ site.tagline }}
         </div>

@@ -4,7 +4,7 @@ layout: default
 
 
 {% if site.image and paginator.page == 1 %}
-  <div class="cover-image"><img src="{{ site.image }}" alt="" /></div>
+  <div class="cover-image"><img src="{{ site.image | absolute_url }}" alt="" /></div>
 {% endif %}
 
 <div class="post-list">

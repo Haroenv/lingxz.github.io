@@ -1,6 +1,6 @@
 # Site title
 title: The Confused Me
-
+# image: '/assets/images/writing.jpg'
 # Tagline below the site title on post list pages
 tagline: Physics and code. Poetry and fiction. I am Lingyi. 
 description:
@@ -13,11 +13,8 @@ repository: "lingxz/lingxz.github.io"
 # The site cover image on the home page
 # image: /crossing-jekyll/images/site-image.jpg
 
-# The shortname for your Disqus site to enable comments
-disqus_shortname:
-
 # Your Google Analytics tracking code
-google_analytics_tracking_id:
+google_analytics_tracking_id: "UA-96137027-1"
 
 
 # Site navigation
